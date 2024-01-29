@@ -47,6 +47,7 @@ a {
     width: 100%;
     height: 70%;
 }
+
 /* mentine imaginile la aceeasi dimensiune */
 
 /* crop la fundal si toate sa aiba aceeasi dimensiune */
@@ -60,9 +61,11 @@ a {
     /* margin-bottom: -1%; */
     /* spatiul dintre produse */
 }
+
 .flex-container ul li p {
     margin-bottom: -10%;
 }
+
 .flex-container>ul {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +75,7 @@ a {
 }
 
 .nume {
-margin-top: 0px;
+    margin-top: 0px;
 }
 
 .flex-container .nume,
@@ -97,7 +100,8 @@ margin-top: 0px;
 
 .wrapper1 {
     background-color: white;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     top: 0%;
     z-index: 1;
@@ -124,7 +128,8 @@ margin-top: 0px;
 
 .wrapper {
     background-color: #f0f0f0;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     top: 5.4%;
     z-index: 1;
@@ -259,7 +264,8 @@ iframe {
     margin-top: 4%;
     background-color: #f0f0f0;
     height: 275px;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     top: 20%;
 }
@@ -287,6 +293,7 @@ iframe {
     font-size: 1em;
 
 }
+
 .mySlides {
     display: none;
 }
@@ -337,22 +344,22 @@ iframe {
     width: 80%;
     margin-top: 5%;
     margin-left: 9.5%;
-  }
-  
-  .sliders_control {
+}
+
+.sliders_control {
     position: relative;
     min-height: 50px;
-  }
-  
-  .form_control {
+}
+
+.form_control {
     position: relative;
     display: flex;
     justify-content: space-between;
     font-size: 24px;
     color: #635a5a;
-  }
-  
-  input[type=range]::-webkit-slider-thumb {
+}
+
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     pointer-events: all;
     width: 24px;
@@ -361,9 +368,9 @@ iframe {
     border-radius: 50%;
     /* box-shadow: 0 0 0 1px #11559e; */
     cursor: pointer;
-  }
-  
-  input[type=range]::-moz-range-thumb {
+}
+
+input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
     pointer-events: all;
     width: 24px;
@@ -371,51 +378,51 @@ iframe {
     background-color: #11559e;
     border-radius: 50%;
     /* box-shadow: 0 0 0 1px #11559e; */
-    cursor: pointer;  
-  }
-  
-  /* input[type=range]::-webkit-slider-thumb:hover {
+    cursor: pointer;
+}
+
+/* input[type=range]::-webkit-slider-thumb:hover {
     background: #f7f7f7;
   } */
-  
-  input[type=range]::-webkit-slider-thumb:active {
+
+input[type=range]::-webkit-slider-thumb:active {
     box-shadow: inset 0 0 3px #11559e, 0 0 9px #11559e;
     -webkit-box-shadow: inset 0 0 3px #11559e, 0 0 9px #11559e;
-  }
-  
-  input[type="number"] {
+}
+
+input[type="number"] {
     color: #8a8383;
     width: 75%;
     height: 30px;
     font-size: 20px;
     border: none;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button, 
-  input[type=number]::-webkit-outer-spin-button {  
-     opacity: 1;
-  }
-  
-  input[type="range"] {
-    -webkit-appearance: none; 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
     appearance: none;
     height: 2px;
     width: 100%;
     position: absolute;
     background-color: #C6C6C6;
     pointer-events: none;
-  }
-  
-  #fromSlider {
+}
+
+#fromSlider {
     height: 0;
     z-index: 1;
-  }
+}
 
 li img {
     object-fit: contain;
 }
 
-  .Instalatie-cu-cazan-in-condensare-GB112-60kW {
+.Instalatie-cu-cazan-in-condensare-GB112-60kW {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -427,7 +434,27 @@ li img {
 
 .text-Instalatie-cu-cazan-in-condensare-GB112-60kW {
     font-size: 150%;
-    margin-left: 5%; /* Adjust the left margin for the text container */
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
     margin-top: 5%;
 }
 
+.Instalatie-cu-cazan-in-condensare-GB112-29kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Instalatie-cu-cazan-in-condensare-GB112-29kW {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+.sl,psd {
+    font-size: 32;
+}
