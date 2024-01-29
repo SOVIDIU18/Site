@@ -95,6 +95,14 @@ margin-top: 0px;
     transition: transform 0.3s ease;
 }
 
+.wrapper1 {
+    background-color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
 .bara1 {
     width: 65%;
     margin: auto;
@@ -116,6 +124,10 @@ margin-top: 0px;
 
 .wrapper {
     background-color: #f0f0f0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 5.4%;
+    z-index: 1;
 }
 
 .bara2 {
@@ -249,7 +261,7 @@ iframe {
     height: 275px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 4%;
+    top: 20%;
 }
 
 .titlu-produs {
@@ -274,6 +286,9 @@ iframe {
     justify-content: center;
     font-size: 1em;
 
+}
+.mySlides {
+    display: none;
 }
 
 .mySlides img {
@@ -399,34 +414,20 @@ iframe {
 li img {
     object-fit: contain;
 }
-* {box-sizing: border-box;}
-.img-zoom-container {
-    position: relative;
-  }
-  
-  .img-zoom-lens {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    display: none;
-  }
-  
-  .img-zoom-result {
-    border: 1px solid #d4d4d4;
-    /*set the size of the result div:*/
-    width: 100%;
-    height: 467px;
-  }
-  .Instalatie-cu-cazan-in-condensare-GB112-60kW{
+
+  .Instalatie-cu-cazan-in-condensare-GB112-60kW {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    font-size: 150%;
     margin-top: 10%;
     margin-left: 15%;
     margin-right: 15%;
-  }
+}
+
+.text-Instalatie-cu-cazan-in-condensare-GB112-60kW {
+    font-size: 150%;
+    margin-left: 5%; /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
