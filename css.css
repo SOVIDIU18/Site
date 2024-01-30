@@ -439,7 +439,7 @@ li img {
     margin-top: 5%;
 }
 
-.Instalatie-cu-cazan-in-condensare-GB112-29kW {
+.Instalatie-cu-cazan-in-condensare-GB112-43kW {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -449,12 +449,249 @@ li img {
     margin-right: 15%;
 }
 
-.text-Instalatie-cu-cazan-in-condensare-GB112-29kW {
+.text-Instalatie-cu-cazan-in-condensare-GB112-43kW {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
     margin-top: 5%;
 }
-.sl,psd {
-    font-size: 32;
+
+.Instalatie-cu-cazan-in-condensare-GB112-29kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
+.text-Instalatie-cu-cazan-in-condensare-GB112-29kW {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cazan-SK755-500kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cazan-SK755-500kW {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cascada-de-3-cazane-GB162-80kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cascada-de-3-cazane-GB162-80kW {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cascada-de-3-cazane-GB162-100kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cascada-de-3-cazane-GB162-100kW {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cascada-de-2-cazane-GB162-80kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cascada-de-2-cazane-GB162-80kW {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cascada-de-2-cazane-GB172-42kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cascada-de-2-cazane-GB172-42kW {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cazan-de-fonta-GE-120kW-niplat {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cazan-de-fonta-GE-120kW-niplat {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cascada-de-2-cazane-de-otel {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cascada-de-2-cazane-de-otel {
+    font-size: 150%;
+    margin-left: 35%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-combinatie-de-cazane {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-combinatie-de-cazane {
+    font-size: 130%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Punct-termic-cu-cazan-pe-lemne-cu-gazeificare-S171-40kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cazan-pe-lemne-cu-gazeificare-S171-40kW {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.text-Punct-termic-cu-cazan-pe-peleti-SP261-25kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cazan-pe-peleti-SP261-25kW {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Cazan-pe-peleti-OPOP-Biopel-de-30kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Cazan-pe-peleti-OPOP-Biopel-de-30kW {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Instalatie-solara-cu-6-panouri-plane-SKT {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Instalatie-solara-cu-6-panouri-plane-SKT {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+.Controlul-cazanului-realizat-prin-internet {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Controlul-cazanului-realizat-prin-internet {
+    font-size: 150%;
+    margin-left: 5%;
+    /* Adjust the left margin for the text container */
+    margin-top: 5%;
+}
+
+
