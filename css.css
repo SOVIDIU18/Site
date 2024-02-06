@@ -444,7 +444,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -453,7 +453,7 @@ li img {
     font-size: 150%;
     margin-left: 25%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Instalatie-cu-cazan-in-condensare-GB112-29kW {
@@ -461,14 +461,14 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .text-Instalatie-cu-cazan-in-condensare-GB112-29kW {
+    width: 25%;
     font-size: 150%;
-    margin-left: 5%;
     /* Adjust the left margin for the text container */
     margin-top: 5%;
 }
@@ -478,7 +478,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -487,7 +487,7 @@ li img {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Punct-termic-cu-cascada-de-3-cazane-GB162-80kW {
@@ -495,7 +495,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -504,7 +504,7 @@ li img {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Punct-termic-cu-cascada-de-3-cazane-GB162-100kW {
@@ -512,7 +512,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -521,7 +521,7 @@ li img {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Punct-termic-cu-cascada-de-2-cazane-GB162-80kW {
@@ -529,7 +529,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -538,7 +538,7 @@ li img {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Punct-termic-cu-cascada-de-2-cazane-GB172-42kW {
@@ -552,6 +552,7 @@ li img {
 }
 
 .text-Punct-termic-cu-cascada-de-2-cazane-GB172-42kW {
+    width: 25%;
     font-size: 150%;
     margin-left: 5%;
     /* Adjust the left margin for the text container */
@@ -563,7 +564,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -572,7 +573,7 @@ li img {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Punct-termic-cu-cascada-de-2-cazane-de-otel {
@@ -580,7 +581,7 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -589,7 +590,7 @@ li img {
     font-size: 150%;
     margin-left: 35%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Punct-termic-cu-combinatie-de-cazane {
@@ -603,6 +604,7 @@ li img {
 }
 
 .text-Punct-termic-cu-combinatie-de-cazane {
+    width: 25%;
     font-size: 130%;
     margin-left: 5%;
     /* Adjust the left margin for the text container */
@@ -620,27 +622,28 @@ li img {
 }
 
 .text-Punct-termic-cu-cazan-pe-lemne-cu-gazeificare-S171-40kW {
+    width: 25%;
     font-size: 150%;
     margin-left: 5%;
     /* Adjust the left margin for the text container */
     margin-top: 5%;
 }
 
-.text-Punct-termic-cu-cazan-pe-peleti-SP261-25kW {
+.Punct-termic-cu-cazan-pe-peleti-SP261-25kW {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .text-Punct-termic-cu-cazan-pe-peleti-SP261-25kW {
     font-size: 150%;
-    margin-left: 5%;
+    margin-left: 20%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .Cazan-pe-peleti-OPOP-Biopel-de-30kW {
@@ -654,8 +657,8 @@ li img {
 }
 
 .text-Cazan-pe-peleti-OPOP-Biopel-de-30kW {
+    width: 30%;
     font-size: 150%;
-    margin-left: 5%;
     /* Adjust the left margin for the text container */
     margin-top: 5%;
 }
@@ -671,6 +674,7 @@ li img {
 }
 
 .text-Instalatie-solara-cu-6-panouri-plane-SKT {
+    width: 25%;
     font-size: 150%;
     margin-left: 5%;
     /* Adjust the left margin for the text container */
@@ -682,16 +686,17 @@ li img {
     flex-direction: row;
     flex-flow: row wrap;
     background-color: white;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .text-Controlul-cazanului-realizat-prin-internet {
     font-size: 150%;
-    margin-left: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     /* Adjust the left margin for the text container */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 
