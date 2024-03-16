@@ -1,13 +1,17 @@
 sa mearga filtrarile
 la data-putere puterile nu sunt separate (nu merg caractere speciale) ex: 20-30 este 2030 inca nu
-de adaugat toti producatorii si puterile inca nu
-de descarcat imagini contcare pt portofoliu si facute ca lumea
-centrala noua electrica
-slider
+de adaugat toti producatorii si puterile
 cautare imagini mai frumix
 dark mode
 tranzitie mai faina la home
 poate ceva scris la home
 
 
+la fiecare produs cosmetizare, adica width, margin-top, margin-bottom etc (folosindu-ne de container-produs si titlu-produs si altele daca e nevoie)
+de facut conturi
+de facut pagina coș
+bara search
+functie de comparare
+favorite
+optimizare pentru telefon
 
