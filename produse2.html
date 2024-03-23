@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css.css">
+        <script defer src="filtrare pret.js"></script>
+        <script defer src="filtrare producator.js"></script>
+        <!-- <script defer src="slider.js"></script> -->
+</head>
+<title>
+        produse
+</title>
+
+<body>
+        <!-- <li class="page-container"> -->
+        <div class="wrapper1">
+                <div class="bara1" style="justify-content: flex-end;">
+                        <ul>
+                                <li><i class="fa fa-phone"></i> 0256 218 484 (comercial)</li>
+                                <li><i class="fa fa-phone"></i> 0256 227 227 (service)</li>
+                                <li><a href="https://www.google.com/maps?ll=45.739328,21.219543&z=17&t=m&hl=en-US&gl=RO&mapclient=embed&q=Strada+Ciprian+Porumbescu+43+Timi%C8%99oara+300425"><i
+                                                        class="fa fa-map-marker"></i> Str. Ciprian Porumbescu, Nr.
+                                                43</a></li>
+                                <li><i class="fa fa-envelope"></i> contcaresrl@gmail.com</li>
+                        </ul>
+                </div>
+        </div>
+        <div class="wrapper">
+                <div class="bara2">
+
+                        <a href="home.html"><img src="imagini/numefirma.jpg" alt="centrală" width="115%"
+                                        class="logo"></a>
+                        <ul>
+                                <li><a href="home.html">HOME</a></li>
+                                <li><a href="produse.html">PRODUSE</a></li>
+                                <li><a href="despre.html">DESPRE NOI</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="container-filtrare-si-produse">
+                <div class="container-sectiune-filtrare">
+                        <!-- Filtrare-producator -->
+                        <br>
+                        <div class="filtrare-producator">
+                                <form id="filtrare-producator-form">
+                                        <label for="producator">Producător:</label>
+                                        <select id="producator" name="producator" onchange="filterProducts()">
+                                                <option value="toate">Toate</option>
+                                                <option value="Baxi">Baxi</option>
+                                                <option value="Beretta">Beretta</option>
+                                                <option value="Bosch">Bosch</option>
+                                                <option value="buderus">Buderus</option>
+                                                <option value="dedietrich">De Dietrich</option>
+                                        </select>
+                                </form>
+                        </div>
+                        <br>
+                        <!-- Filtrare-putere -->
+                        <div class="filtrare-putere">
+                                <form id="filtrare-putere-form">
+                                        <label for="putere">Putere (kW):</label>
+                                        <select id="putere" name="putere" onchange="filterProducts()">
+                                                <option value="toate">Toate</option>
+                                                <option value="2030">20-30</option>
+                                                <option value="31">31-40</option>
+                                                <option value="41-50">41-50</option>
+                                                <option value="51-60">51-60</option>
+                                                <option value="61-70">61-70</option>
+                                        </select>
+                                </form>
+                        </div>
+                        <br>
+                        <!-- Filtrare-combustibil -->
+                        <div class="filtrare-combustibil">
+                                <form id="filtrare-combustibil-form">
+                                        <label for="combustibil">Combustibil:</label>
+                                        <select id="combustibil" name="combustibil" onchange="filterProducts()">
+                                                <option value="toate">Toate</option>
+                                                <option value="gaz">Gaz</option>
+                                                <option value="lemn">Lemn</option>
+                                                <option value="pellets">Pellets</option>
+                                        </select>
+                                </form>
+                        </div>
+                        <br>
+                        <div class="range_container">
+                                <form id="filtrare-pret-form">
+                                        <div class="sliders_control">
+                                                <input id="fromSlider" type="range" value="0" min="0" max="30000">
+                                                <input id="toSlider" type="range" value="30000" min="0" max="30000">
+                                        </div>
+                                        <div class="form_control">
+                                                <div class="form_control_container1">
+                                                        <div class="form_control_container__time">Min</div>
+                                                        <input class="form_control_container__time__input" type="number"
+                                                                id="fromInput" value="0" min="0" max="30000">
+                                                </div>
+                                                <div class="form_control_container2">
+                                                        <div class="form_control_container__time">Max</div>
+                                                        <input class="form_control_container__time__input" type="number"
+                                                                id="toInput" value="30000" min="0" max="30000">
+                                                </div>
+                                        </div>
+                                </form>
+                        </div>
+                </div>
+                <div class="flex-container">
+                        <ul>
+                                <!-- centrală 1 -->
+                                <li data-producator="Baxi" data-pret="4800" data-putere="2030" data-combustibil="gaz"><a
+                                                href="Luna Classic 1.24 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Classic 1.24 (sistem)\Luna_Classic_24__28__1.24.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Classic 1.24 (sistem) <span
+                                                                style="display: none;">Baxi</span> <span
+                                                                style="display: none;">24 kW</span></p>
+                                                <p class="pret">4800 RON</p>
+                                </li>
+                                <!-- centrală 2 -->
+                                <li data-producator="Baxi" data-pret="3800" data-putere="31" data-combustibil="lemn"><a
+                                                href="Luna Classic 20-24.html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Classic 20-24/Luna_Classic_24__28__1.24.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Classic 20/24 <span
+                                                                style="display: none;">Baxi</span> <span
+                                                                style="display: none;">20 kW</span></p>
+                                                <p class="pret">3800 RON</p>
+                                </li>
+                                <!-- centrală 3 -->
+                                <li data-producator="Baxi" data-pret="4000"><a href="Luna Classic 24-28.html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Classic 24-28\Luna_Classic_24__28__1.24.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Classic 24/28<span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">24 kW</span></p>
+                                                <p class="pret">4000 RON</p>
+                                </li>
+                                <!-- centrală 4 -->
+                                <li data-pret="20000"><a href="Luna Duo-Tec E 1.28 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec E 1.28 (sistem)\Luna_Duo-Tec_E_1.28__1.32__32-40.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec E 1.28 (sistem)<span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">28 kW</span></p>
+                                                <p class="pret">4800 RON</p>
+                                </li>
+                                <!-- centrală 5 -->
+                                <li><a href="Luna Duo-Tec E 1.32 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec E 1.32 (sistem)\Luna_Duo-Tec_E_1.28__1.32__32-40.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec E 1.32 (sistem)<span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">32 kW</span></p>
+                                                <p class="pret">6300 RON</p>
+                                </li>
+                                <!-- centrală 6 -->
+                                <li><a href="Luna Duo-Tec E 32-40.html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec E 32-40\Luna_Duo-Tec_E_1.28__1.32__32-40.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec E 32-40 <span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">32 kW</span></p>
+                                                <p class="pret">6400 RON</p>
+                                </li>
+                                <!-- centrală 7 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.50 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.50 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class=" nume">Luna Duo-Tec MP+ 1.50 (sistem) <span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">45 kW</span></p>
+                                                <p class="pret">13400 RON</p>
+                                </li>
+                                <!-- centrală 8 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.60 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.60 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec MP+ 1.60 (sistem) <span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">55 kW</span>
+                                                </p>
+                                                <p class="pret">15450 RON</p>
+                                </li>
+                                <!-- centrală 9 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.70 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.70 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec MP+ 1.70 (sistem) <span
+                                                                style="display: none;">Baxi</span> <span
+                                                                style="display: none;">65 kW</span></p>
+
+                                                <p class="pret"> 17000 RON</p>
+                                </li>
+                                <!-- centrală 10 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.90 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.90 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec MP+ 1.90 (sistem) <span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">85 kW</span>
+                                                </p>
+                                                <p class="pret">21900 RON</p>
+                                </li>
+                                <!-- centrală 11 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.110 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.110 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec MP+ 1.110 (sistem) <span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">102 kW</span>
+                                                </p>
+                                                <p class="pret">24600 RON</p>
+                                </li>
+                                <!-- centrală 12 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.130 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.130 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec MP+ 1.130 (sistem) <span
+                                                                style="display: none;">Baxi</span> <span
+                                                                style="display: none;">120,5 kW</span>
+                                                </p>
+                                                <p class="pret">28250 RON</p>
+                                </li>
+                                <!-- centrală 13 -->
+                                <li><a href="Luna Duo-Tec MP+ 1.150 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Duo-Tec MP+ 1.150 (sistem)\Luna_Duo-Tec_MP+_50__60__70__90__110__115__130__150.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Duo-Tec MP+ 1.150 (sistem)<span
+                                                                style="display: none;">Baxi</span> <span
+                                                                style="display: none;"> 140,3 kW</span>
+                                                </p>
+                                                <p class="pret">30800 RON</p>
+                                </li>
+                                <!-- centrală 14 -->
+                                <li><a href="Luna Platinum+ 1.32 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Baxi\Luna Platinum+ 1.32 (sistem)\Luna_Platinum+_1.32__sistem.png"
+                                                        alt="centrală">
+                                                <p class="nume">Luna Platinum+ 1.32 (sistem)
+                                                        <p class="pret">7450 RON</p> <span
+                                                                style="display: none;">Baxi</span><span
+                                                                style="display: none;">32 kW </span>
+                                                </p>
+                                </li>
+
+
+
+                                <!-- centrală 15 -->
+                                <li data-producator="Beretta"><a href="Ciao X 25C.html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Ciao X 25C\Ciao_X_25C__30C_(nu e 3x4).png"
+                                                        alt="centrală">
+                                                <p class="nume">Ciao X 25C<span
+                                                                style="display: none;">Beretta</span><span
+                                                                style="display: none;">20 kW</span>
+                                                        <p class="pret"> 3900 RON</p>
+                                </li>
+                                <!-- centrală 16 -->
+                                <li data-producator="Beretta"><a href="Ciao X 30C.html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Ciao X 30C\Ciao_X_25C__30C_(nu e 3x4).png"
+                                                        alt="centrală">
+                                                <p class="nume">Ciao X 30C<span style="display: none;">Beretta</span>
+                                                </p><span style="display: none;">24 kW </span>
+                                                <p class="pret">4050RON</p>
+                                </li>
+                                <!-- centrală 17 -->
+                                <li data-producator="Beretta"><a href="Mynute X 30R (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Mynute X 30R (sistem)\Mynute_X.png"
+                                                        alt="centrală">
+                                                <p class="nume">Mynute X 30R (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">30 kW</span>
+                                                </p>
+                                                <p class="pret">5700 RON</p>
+                                </li>
+                                <!-- centrală 18 -->
+                                <li><a href="Mynute X 35C.html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Mynute X 35C\Mynute_X.png"
+                                                        alt="centrală">
+                                                <p class="nume">Mynute X 35C <span style="display: none;">Beretta</span>
+                                                </p> <span style="display: none;">30 kW</span>
+                                                <p class="pret"> 5500 RON</p>
+                                </li>
+                                <!-- centrală 19 -->
+                                <li><a href="Mynute X 40C.html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Mynute X 40C\Mynute_X.png"
+                                                        alt="centrală">
+                                                <p class="nume">Mynute X 40C <span style="display: none;">Beretta</span>
+                                                </p> <span style="display: none;">30 kW</span>
+                                                <p class="pret">5900 RON</p>
+                                </li>
+                                <!-- centrală 20 -->
+                                <li><a href="Power Max 65P (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Power Max 65P (sistem)\beretta_power_max.png"
+                                                        alt="centrală">
+                                                <p class="nume">Power Max 65P (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">56 kW </span>
+                                                </p>
+                                                <p class="pret">16800 RON</p>
+                                </li>
+                                <!-- centrală 21 -->
+                                <li><a href="Power Max 80P (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Power Max 80P (sistem)\beretta_power_max.png"
+                                                        alt="centrală">
+                                                <p class="nume">Power Max 80P (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">68 kW</span>
+                                                </p>
+                                                <p class="pret">17750RON</p>
+                                </li>
+                                <!-- centrală 22 -->
+                                <li><a href="Power Max 100P (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Power Max 100 (sistem)\beretta_power_max.png"
+                                                        alt="centrală">
+                                                <p class="nume">Power Max 100P (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">90 kW</span>
+                                                </p>
+                                                <p class="pret">20850 RON</p>
+                                </li>
+                                <!-- centrală 23 -->
+                                <li><a href="Power Max 110P (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Power Max 100 (sistem)\beretta_power_max.png"
+                                                        alt="centrală">
+                                                <p class="nume">Power Max 110P (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">97 kW</span>
+                                                </p>
+                                                <p class="pret">21150 RON</p>
+                                </li>
+                                <!-- centrală 24 -->
+                                <li><a href="Power Max 130P (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Power Max 130 (sistem)/beretta_power_max.png"
+                                                        alt="centrală">
+                                                <p class="nume">Power Max 130P (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">112 kW</span>
+                                                </p>
+                                                <p class="pret">21900 RON</p>
+                                </li>
+                                <!-- centrală 25 -->
+                                <li><a href="Power Max 150P (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Beretta\Power Max 150 (sistem)\beretta_power_max.png"
+                                                        alt="centrală">
+                                                <p class="nume">Power Max 150P (sistem) <span
+                                                                style="display: none;">Beretta</span> <span
+                                                                style="display: none;">131 kW</span>
+                                                </p>
+                                                <p class="pret">22650 RON</p>
+                                </li>
+
+
+
+                                <!-- centrală 26 -->
+                                <li><a href="Condens 2300.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 2300\Condens_2300.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 2300 <span style="display: none;">Bosch</span>
+                                                        <span style="display: none;">24 kW</span>
+                                                </p>
+                                                <p class="pret">4550 RON</p>
+                                </li>
+                                <!-- centrală 27 -->
+                                <li data-producator="Bosch"><a href="Condens 2500 WBC 24-1 DE.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 2500 WBC 24-1 DE\Condens_2500.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 2500 WBC 24-1 DE <span
+                                                                style="display: none;">Bosch</span> <span
+                                                                style="display: none;">24 kW</span>
+                                                </p>
+                                                <p class="pret">4650 RON</p>
+                                </li>
+                                <!-- centrală 28 -->
+                                <li data-producator="Bosch"><a href="Condens 5000 -70 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 5000 -70 (sistem)\Condens_5000_70_100.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 5000 -70 (sistem) <span
+                                                                style="display: none;">Bosch</span> <span
+                                                                style="display: none;">70 kW </span>
+                                                </p>
+                                                <p class="pret">22650 RON</p>
+                                </li>
+                                <!-- centrală 29 -->
+                                <li data-producator="Bosch"><a href="Condens 5000 -100 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 5000 -100 (sistem)\Condens_5000_70_100.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 5000 -100 (sistem) <span
+                                                                style="display: none;">Bosch</span> <span
+                                                                style="display: none;">100 kW</span>
+                                                </p>
+                                                <p class="pret">25350 RON</p>
+                                </li>
+                                <!-- centrală 30 -->
+                                <li><a href="Condens 7000 28 ZSBR.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000 28 ZSBR\Condens_7000_ZSBR__ZWBR__ZBR.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000 28 ZSBR <span
+                                                                style="display: none;">Bosch</span></p> <span
+                                                        style="display: none;"> 28 kW</span>
+
+                                                <p class="pret">8950 RON</p>
+                                </li>
+                                <!-- centrală 31 -->
+                                <li><a href="Condens 7000 35 ZBR.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000 35 ZBR\Condens_7000_ZSBR__ZWBR__ZBR.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000 35 ZBR <span
+                                                                style="display: none;">Bosch</span></p> <span
+                                                        style="display: none;">35 kW </span>
+
+                                                <p class="pret">9000 RON</p>
+                                </li>
+                                <!-- centrală 32 -->
+                                <li><a href="Condens 7000 42 ZBR.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000 42 ZBR\Condens_7000_ZSBR__ZWBR__ZBR.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000 42 ZBR <span
+                                                                style="display: none;">Bosch</span></p> <span
+                                                        style="display: none;">42 kW</span>
+
+                                                <p class="pret">11650 RON</p>
+                                </li>
+                                <!-- centrală 33 -->
+                                <li><a href="Condens 7000i W 24-28.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000i 24-28\condens-7000i-alb.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000i W 24-28 <span
+                                                                style="display: none;">Bosch</span></p> <span
+                                                        style="display: none;">24 kW</span>
+
+                                                <p class="pret">7500 RON</p>
+                                </li>
+                                <!-- centrală 34 -->
+                                <li><a href="Condens 7000i W 30-35.html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000i 30-35\condens-7000i-alb.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000i W 30-35 <span
+                                                                style="display: none;">Bosch</span></p> <span
+                                                        style="display: none;">30 kW</span>
+
+                                                <p class="pret">9800 RON</p>
+                                </li>
+                                <!-- centrală 35-->
+                                <li><a href="Condens 7000i W 35 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000i 35 (sistem)\condens-7000i-negru.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000i W 35 (sistem) <span
+                                                                style="display: none;">Bosch</span> <span
+                                                                style="display: none;">35 kW</span>
+                                                </p>
+                                                <p class="pret"> 10550 RON</p>
+                                </li>
+                                <!-- centrală 36 -->
+                                <li><a href="Condens 7000i W 42 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Condens 7000i 42 (sistem)\condens-7000i-negru.png"
+                                                        alt="centrală">
+                                                <p class="nume">Condens 7000i W 42 (sistem) <span
+                                                                style="display: none;">Bosch</span> <span
+                                                                style="display: none;">42 kW</span>
+                                                </p>
+                                                <p class="pret"> 12150 RON</p>
+                                </li>
+                                <!-- centrală 37 -->
+                                <li><a href="Tronic Heat 3500 - electric (4 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (4 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">4 kW</span>
+                                                </p>
+                                                <p class="pret"> 3550 RON</p>
+                                </li>
+                                <!-- centrală 38 -->
+                                <li><a href="Tronic Heat 3500 - electric (6 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (6 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">6 kW</span>
+                                                </p>
+                                                <p class="pret"> 3700 RON</p>
+                                </li>
+                                <!-- centrală 39 -->
+                                <li><a href="Tronic Heat 3500 - electric (9 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (9 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">9 kW</span>
+                                                </p>
+                                                <p class="pret"> 3900 RON</p>
+                                </li>
+                                <!-- centrală 40 -->
+                                <li><a href="Tronic Heat 3500 - electric (12 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (12 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">12 kW</span>
+                                                </p>
+                                                <p class="pret"> 4350 RON</p>
+                                </li>
+                                <!-- centrală 41 -->
+                                <li><a href="Tronic Heat 3500 - electric (15 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (15 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">15 kW</span>
+                                                </p>
+                                                <p class="pret"> 4600 RON</p>
+                                </li>
+                                <!-- centrală 42 -->
+                                <li><a href="Tronic Heat 3500 - electric (18 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (18 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">18 kW</span>
+                                                </p>
+                                                <p class="pret"> 4900 RON</p>
+                                </li>
+                                <!-- centrală 43 -->
+                                <li><a href="Tronic Heat 3500 - electric (24 kW).html"><img
+                                                        src="date site\Site Contcare\Produse\Bosch\Tronic Heat 3500 - electric\Tronic_Heat_3500_-_Imagine-removebg-preview.png"
+                                                        alt="centrală">
+                                                <p class="nume">Tronic Heat 3500 - electric (24 kW) <span
+                                                                style="display: none;">Bosch</span><span
+                                                                style="display: none;">24 kW</span>
+                                                </p>
+                                                <p class="pret"> 5150 RON</p>
+                                </li>
+
+
+
+
+                                <!-- centrală 44 -->
+                                <li><a href="GB062-24 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB062-24 (sistem)\GB062-24(K).png"
+                                                        alt="centrală">
+                                                <p class="nume">GB062-24 (sistem) <span
+                                                                style="display: none;">Buderus</span> <span
+                                                                style="display: none;">24 kW</span></p>
+
+                                                <p class="pret"> 5500 RON</p>
+                                </li>
+                                <!-- centrală 45-->
+                                <li><a href="GB062-24K.html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB062-24K\GB062-24(K).png"
+                                                        alt="centrală">
+                                                <p class="nume">GB062-24K <span style="display: none;">Buderus</span>
+                                                        <span style="display: none;">24 kW</span>
+                                                </p>
+                                                <p class="pret"> 4450 RON</p>
+                                </li>
+                                <!-- centrală 46 -->
+                                <li><a href="GB122-24K.html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB122-24K\GB122-24(K).png"
+                                                        alt="centrală">
+                                                <p class="nume">GB122-24K <span style="display: none;">Buderus</span>
+                                                        <span style="display: none;">24 kW</span>
+                                                </p>
+                                                <p class="pret"> 4750 RON</p>
+                                </li>
+                                <!-- centrală 47 -->
+                                <li><a href="GB162-70 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB162-70 (sistem)\GB162_70_85_100.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB162-70 (sistem) <span
+                                                                style="display: none;">Buderus</span> <span
+                                                                style="display: none;"> 70 kW</span></p>
+
+                                                <p class="pret"> 18700 RON</p>
+                                </li>
+                                <!-- centrală 48-->
+                                <li><a href="GB162-85 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB162-85 (sistem)\GB162_70_85_100.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB162-85 (sistem) <span
+                                                                style="display: none;">Buderus</span> <span
+                                                                style="display: none;">85 kW</span></p>
+
+                                                <p class="pret"> 23550 RON</p>
+                                </li>
+                                <!-- centrală 49 -->
+                                <li><a href="GB162-100 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB162-100 (sistem)\GB162_70_85_100.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB162-100 (sistem) <span
+                                                                style="display: none;">Buderus</span> <span
+                                                                style="display: none;">100 kW</span></p>
+
+                                                <p class="pret"> 26300 RON</p>
+                                </li>
+                                <!-- centrală 50-->
+                                <li><a href="GB172i-30K.html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB172i-30K\GB172i_30K_35(K)_42_alb.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB172i-30K <span
+                                                                style="display: none;">Buderus</span><span
+                                                                style="display: none;">30 kW</span></p>
+                                                <p class="pret"> 7500 RON</p>
+                                </li>
+                                <!-- centrală 51 -->
+                                <li><a href="GB172i-35 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB172i-35 (sistem)\GB172i_30K_35(K)_42_alb.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB172i-35 (sistem) <span
+                                                                style="display: none;">Buderus</span><span
+                                                                style="display: none;">35 kW</span></p>
+                                                </p>
+                                                <p class="pret"> 9800 RON</p>
+                                </li>
+                                <!-- centrală 52 -->
+                                <li><a href="GB172i-35K.html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB172i-35K\GB172i_30K_35(K)_42_negru.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB172i-35K <span
+                                                                style="display: none;">Buderus</span><span
+                                                                style="display: none;">35 kW</span></p>
+                                                <p class="pret"> 9250 RON</p>
+                                </li>
+                                <!-- centrală 53-->
+                                <li><a href="GB172i-42 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\Buderus\GB172i-42 (sistem)\GB172i_30K_35(K)_42_negru.png"
+                                                        alt="centrală">
+                                                <p class="nume">GB172i-42 (sistem) <span
+                                                                style="display: none;">Buderus</span><span
+                                                                style="display: none;">42 kW</span></p>
+
+                                                <p class="pret"> 12000 RON</p>
+                                </li>
+
+
+                                <!-- centrală 54-->
+                                <li><a href="AMC Pro 45 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\AMC Pro 45 (sistem)\AMC_Pro_45_65_90_115.png"
+                                                        alt="centrală">
+                                                <p class="nume">AMC Pro 45 - Diematic (sistem) <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">41 kW</span></p>
+                                                <p class="pret">12300 RON</p>
+                                </li>
+                                <!-- centrală 55-->
+                                <li><a href="AMC Pro 65 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\AMC Pro 65 (sistem)\AMC_Pro_45_65_90_115.png"
+                                                        alt="centrală">
+                                                <p class="nume">AMC Pro 65 - Diematic (sistem) <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">61 kW</span></p>
+                                                <p class="pret"> 16950 RON</p>
+                                </li>
+                                <!-- centrală 56-->
+                                <li><a href="AMC Pro 90 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\AMC Pro 90 (sistem)\AMC_Pro_45_65_90_115.png"
+                                                        alt="centrală">
+                                                <p class="nume">AMC Pro 90 (sistem) <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">84 kW</span>
+                                                </p>
+                                                <p class="pret"> 21750 RON</p>
+                                </li>
+                                <!-- centrală 57-->
+                                <li><a href="AMC Pro 115 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\AMC Pro 115 (sistem)\AMC_Pro_45_65_90_115.png"
+                                                        alt="centrală">
+                                                <p class="nume">AMC Pro 115 (sistem) <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">104 kW</span>
+                                                </p>
+                                                <p class="pret"> 25250 RON</p>
+                                </li>
+                                <!-- centrală 58-->
+                                <li><a href="MPX 24-28.html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\MPX 24-28\MPX_24-28.png"
+                                                        alt="centrală">
+                                                <p class="nume">MPX 24-28 <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">24 kW</span></p>
+                                                <p class="pret"> 4300 RON</p>
+                                </li>
+                                <!-- centrală 59-->
+                                <li><a href="MPX 28-33 BIC.html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\MPX 28-33 BIC\MPX_24-28.png"
+                                                        alt="centrală">
+                                                <p class="nume">MPX 28/33 BIC <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">28 kW</span></p>
+
+                                                <p class="pret"> 8600 RON</p>
+                                </li>
+                                <!-- centrală 60-->
+                                <li><a href="Naneo 24 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\Naneo 24 (sistem)\Naneo_24_34_30-35_34-39.png"
+                                                        alt="centrală">
+                                                <p class="nume">Naneo 24 (sistem) <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">24 kW</span></p>
+
+                                                <p class="pret"> 5800 RON</p>
+                                </li>
+                                <!-- centrală 61-->
+                                <li><a href="Naneo 30-35.html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\Naneo 30-35\Naneo_24_34_30-35_34-39.png"
+                                                        alt="centrală">
+                                                <p class="nume">Naneo 30-35 <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">30 kW</span></p>
+                                                <p class="pret">6200 RON</p>
+                                </li>
+                                <!-- centrală 62-->
+                                <li><a href="Naneo 34 (sistem).html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\Naneo 34 (sistem)\Naneo_24_34_30-35_34-39.png"
+                                                        alt="centrală">
+                                                <p class="nume">Naneo 34 (sistem) <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">34 kW</span></p>
+
+                                                <p class="pret"> 6600 RON</p>
+                                </li>
+                                <!-- centrală 63-->
+                                <li><a href="Naneo 34-39.html"><img
+                                                        src="date site\Site Contcare\Produse\DeDietrich\Naneo 34-39\Naneo_24_34_30-35_34-39.png"
+                                                        alt="centrală">
+                                                <p class="nume">Naneo 34-39 <span
+                                                                style="display: none;">DeDietrich</span><span
+                                                                style="display: none;">34 kW</span></p>
+                                                <p class="pret"> 6600 RON</p>
+                                </li>
+
+                        </ul>
+                </div>
+        </div>
+</body>
+
+</html>

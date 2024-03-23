@@ -1,17 +1,44 @@
 function fct1() {
-    let pretmin = 0
-    let pretmax = 1000
-    let cerere = axios.get(`http://127.0.0.1:8090/api/collections/centrale/records`,{params: {
-        filter: `pret< ${pretmax} && pret> ${pretmin} && stoc=true && (producator=Baxi || producator=Bosch)`
-      }}).then(function (response) {
+    let cerere = axios.get(`http://127.0.0.1:8090/api/collections/centrale/records`, {
+        params: {
+            filter: ``,
+            perPage: 100
+        }
+    }).then(function (response) {
         console.log(response.data)
-    for(let i=0;i<response.data["totalItems"];i++){
-    let data = response.data["items"][i]
-    let nume = data["nume"]
-    let pret = data["pret"]
-    let stoc = data["stoc"]
-    console.log(`${nume} ${pret} ${stoc}`)
-    }
+        let maindiv = document.getElementById("divm");
+
+        for (let i = 0; i < response.data["totalItems"]; i++) {
+
+            let data = response.data["items"][i]
+            let nume = data["nume"]
+            let pret = data["pret"]
+            let stoc = data["stoc"]
+            console.log(`${nume} ${pret} ${stoc}`)
+            let centrala = document.createElement("div")
+            centrala.className = "element"
+            let nume1 = document.createElement("p");
+            nume1.className = "text"
+            let pret1 = document.createElement("p");
+            pret1.className = "pret"
+            let stoc1 = document.createElement("input");
+            stoc1.type = "checkbox";
+            let poza = document.createElement("img");
+            poza.className = "imagine"
+            poza.src = "/date site/Site Contcare/Produse/Bosch/Condens 2300/Condens 2300 - Imagine.jpg"
+            nume1.textContent += nume;
+            pret1.textContent += pret;
+            stoc1.checked = (stoc == "true");
+            centrala.appendChild(nume1);
+            centrala.appendChild(pret1);
+            centrala.appendChild(stoc1);
+            centrala.appendChild(poza);
+            maindiv.appendChild(centrala)
+        }
         // document.body.append(nume1[])
     })
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    fct1();
+});

@@ -1,0 +1,21 @@
+.principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.element {
+    flex-direction: column;
+}
+
+.text {
+    font-size: 25;
+}
+
+.pret {
+    color: red;
+}
+
+.imagine {
+    width: 300px;
+}
