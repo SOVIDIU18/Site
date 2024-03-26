@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css-produse.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="filtrare pret.js"></script>
+    <script defer src="filtrare producator.js"></script>
     <script src="bazadedate.js"></script>
-    
+
     <title>Document</title>
 </head>
-<body>
-    <div class="principal" id="divm">
 
+<body>
+    <div class="wrapper1">
+        <div class="bara1" style="justify-content: flex-end;">
+            <ul>
+                <li><i class="fa fa-phone"></i> 0256 218 484 (comercial)</li>
+                <li><i class="fa fa-phone"></i> 0256 227 227 (service)</li>
+                <li><a
+                        href="https://www.google.com/maps?ll=45.739328,21.219543&z=17&t=m&hl=en-US&gl=RO&mapclient=embed&q=Strada+Ciprian+Porumbescu+43+Timi%C8%99oara+300425"><i
+                            class="fa fa-map-marker"></i> Str. Ciprian Porumbescu, Nr.
+                        43</a></li>
+                <li><i class="fa fa-envelope"></i> contcaresrl@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="bara2">
+
+            <a href="home.html"><img src="imagini/numefirma.jpg" alt="centrală" width="115%" class="logo"></a>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="produse.html">PRODUSE</a></li>
+                <li><a href="despre.html">DESPRE NOI</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-filtrare-si-produse">
+        <div class="container-sectiune-filtrare">
+            <!-- Filtrare-producator -->
+            <br>
+            <div class="filtrare-producator">
+                <form id="filtrare-producator-form">
+                    <label for="producator">Producător:</label>
+                    <select id="producator" name="producator" onchange="filterProducts()">
+                        <option value="toate">Toate</option>
+                        <option value="Baxi">Baxi</option>
+                        <option value="Beretta">Beretta</option>
+                        <option value="Bosch">Bosch</option>
+                        <option value="buderus">Buderus</option>
+                        <option value="dedietrich">De Dietrich</option>
+                    </select>
+                </form>
+            </div>
+            <br>
+            <!-- Filtrare-putere -->
+            <div class="filtrare-putere">
+                <form id="filtrare-putere-form">
+                    <label for="putere">Putere (kW):</label>
+                    <select id="putere" name="putere" onchange="filterProducts()">
+                        <option value="toate">Toate</option>
+                        <option value="2030">20-30</option>
+                        <option value="31">31-40</option>
+                        <option value="41-50">41-50</option>
+                        <option value="51-60">51-60</option>
+                        <option value="61-70">61-70</option>
+                    </select>
+                </form>
+            </div>
+            <br>
+            <!-- Filtrare-combustibil -->
+            <div class="filtrare-combustibil">
+                <form id="filtrare-combustibil-form">
+                    <label for="combustibil">Combustibil:</label>
+                    <select id="combustibil" name="combustibil" onchange="filterProducts()">
+                        <option value="toate">Toate</option>
+                        <option value="gaz">Gaz</option>
+                        <option value="lemn">Lemn</option>
+                        <option value="pellets">Pellets</option>
+                    </select>
+                </form>
+            </div>
+            <br>
+            <div class="range_container">
+                <form id="filtrare-pret-form">
+                    <div class="sliders_control">
+                        <input id="fromSlider" type="range" value="0" min="0" max="30000">
+                        <input id="toSlider" type="range" value="30000" min="0" max="30000">
+                    </div>
+                    <div class="form_control">
+                        <div class="form_control_container1">
+                            <div class="form_control_container__time">Min</div>
+                            <input class="form_control_container__time__input" type="number" id="fromInput" value="0"
+                                min="0" max="30000">
+                        </div>
+                        <div class="form_control_container2">
+                            <div class="form_control_container__time">Max</div>
+                            <input class="form_control_container__time__input" type="number" id="toInput" value="30000"
+                                min="0" max="30000">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="principal" id="divm">
+            <div id="divm">
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

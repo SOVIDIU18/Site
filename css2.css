@@ -14,6 +14,28 @@ a {
     background-color: #f0f0f0;
 }
 
+.principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.element {
+    flex-direction: column;
+}
+
+.text {
+    font-size: 25;
+}
+
+.pret {
+    color: red;
+}
+
+.imagine {
+    width: 300px;
+}
+
 .dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -27,6 +49,10 @@ a {
 .dark-mode .bara2 {
     background-color: #333333;
     color: #ffffff;
+}
+
+.filtrare-pret {
+    margin-right: 20%;
 }
 
 .flex-container {
@@ -261,6 +287,7 @@ iframe {
 .container-filtrare-si-produse {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     margin-left: 17%;
     margin-right: 17%;
 }
@@ -282,7 +309,6 @@ iframe {
     align-items: center;
     font-size: 2.5em;
 }
-
 .titlu-produs-Luna-Classic {
     margin-top: 13%;
     justify-content: center;
@@ -713,3 +739,5 @@ li img {
     /* Adjust the left margin for the text container */
     margin-top: 7%;
 }
+
+

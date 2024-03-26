@@ -25,20 +25,22 @@ function fct1() {
             stoc1.type = "checkbox";
             let poza = document.createElement("img");
             poza.className = "imagine"
-            poza.src = "/date site/Site Contcare/Produse/Bosch/Condens 2300/Condens 2300 - Imagine.jpg"
+            poza.src = "date site\\Site Contcare\\Produse\\Beretta\\Power Max 65P (sistem)\\Power_Max_-_Imagine-removebg-preview.png"
             nume1.textContent += nume;
-            pret1.textContent += pret;
+            pret1.textContent += pret + " RON " ;
             stoc1.checked = (stoc == "true");
+
+            
+            centrala.appendChild(poza);
+            // centrala.appendChild(stoc1);
+            maindiv.appendChild(centrala)
             centrala.appendChild(nume1);
             centrala.appendChild(pret1);
-            centrala.appendChild(stoc1);
-            centrala.appendChild(poza);
-            maindiv.appendChild(centrala)
         }
         // document.body.append(nume1[])
     })
 }
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     fct1();
 });

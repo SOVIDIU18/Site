@@ -1,21 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none
+}
+
 .principal {
     display: flex;
-    flex-direction: row;
+    /* flex-flow: row; */
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .element {
-    flex-direction: column;
+    flex-direction: row;
+    width: 25%;
+    overflow-wrap: break-word;
 }
 
 .text {
-    font-size: 25;
+    font-size: 125%;
+    color: #11559e;
+    text-align: center;
+    margin-top: 3%;
+
 }
 
 .pret {
-    color: red;
+    color: black;
+    font-size: 150%;
+    margin-top: -7%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .imagine {
-    width: 300px;
+    width: 250px;
+    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+.imagine:hover {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease;
+    /* Smooth transition over 0.3 seconds */
+    z-index: auto;
+}
+
+.imagine:not(:hover) {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease;
+}
+
+.wrapper1 {
+    background-color: white;
+    position: -webkit-sticky;
+    /* Safari */
+    top: 0%;
+    z-index: 1;
+}
+
+.bara1 {
+    width: 65%;
+    margin: auto;
+    padding: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bara1 ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.bara1 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    background-color: #f0f0f0;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.bara2 {
+    width: 66%;
+    font-size: 125%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+.bara2 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.bara2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bara2 ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #11559e;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.bara2 ul li:hover::after {
+    width: 100%;
+}
+
+.bara2 ul li a current {
+    border-bottom: 3px solid #11559e;
+    /* Adaugă o linie albăstră sub text */
+}
+
+.container-filtrare-si-produse {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-sectiune-filtrare {
+    width: 25%;
+    margin-top: 4%;
+    background-color: #f0f0f0;
+    height: 275px;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 14%;
+}
+
+.range_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 9.5%;
+}
+
+.sliders_control {
+    position: relative;
+    min-height: 50px;
+}
+
+.form_control {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #635a5a;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #11559e;
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 1px #11559e; */
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #11559e;
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 1px #11559e; */
+    cursor: pointer;
+}
+
+/* input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+  } */
+
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #11559e, 0 0 9px #11559e;
+    -webkit-box-shadow: inset 0 0 3px #11559e, 0 0 9px #11559e;
+}
+
+input[type="number"] {
+    color: #8a8383;
+    width: 75%;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #C6C6C6;
+    pointer-events: none;
+}
+
+#fromSlider {
+    height: 0;
+    z-index: 1;
 }
