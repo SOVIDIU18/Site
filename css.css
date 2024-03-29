@@ -122,7 +122,7 @@ a {
 }
 
 .wrapper {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
@@ -138,7 +138,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
 }
 
 .bara2 ul li {
@@ -171,6 +171,35 @@ a {
 .bara2 ul li a current {
     border-bottom: 3px solid #11559e;
     /* Adaugă o linie albăstră sub text */
+}
+
+.wrapper3 {
+    background-color: #f0f0f0;
+    position: -webkit-sticky;
+    /* Safari */
+    top: 8%;
+    z-index: 1;
+    position: sticky;
+}
+
+.bara3 {
+    width: 65%;
+    font-size: 150%;
+    margin: auto;
+    padding: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bara3 ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.bara3 ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 #range-pret {

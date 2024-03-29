@@ -9,9 +9,9 @@ a {
 
 .principal {
     display: flex;
-    /* flex-flow: row; */
     flex-wrap: wrap;
-    margin: 0;
+    margin-top: 3%;
+    margin-left: 3%;
     padding: 0;
     width: 100%;
 }
@@ -62,7 +62,7 @@ a {
 }
 
 .wrapper1 {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: -webkit-sticky;
     /* Safari */
     top: 0%;
@@ -89,7 +89,7 @@ a {
 }
 
 .wrapper {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
@@ -105,7 +105,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
 }
 
 .bara2 ul li {
@@ -140,15 +140,95 @@ a {
     /* Adaugă o linie albăstră sub text */
 }
 
+.wrapper3 {
+    background-color: #f0f0f0;
+    position: -webkit-sticky;
+    /* Safari */
+    top: 8%;
+    z-index: 1;
+    position: sticky;
+}
+
+.bara3 {
+    overflow: hidden;
+    width: 65%;
+    font-size: 150%;
+    margin: auto;
+    padding: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bara3 ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.bara3 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bara3 .search-container {
+    float: left;
+}
+
+.bara3 input[type=text] {
+    padding-left: 5px;
+    /* Ajustați acest lucru la dimensiunea dorită pentru a muta textul mai la stânga */
+    margin-top: 8px;
+    font-size: 20px;
+    width: 350px;
+    /* Modificați această valoare la dimensiunea dorită pentru a face bara de căutare mai mare */
+}
+
+.bara3 .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .bara3 .search-container {
+        float: none;
+    }
+
+    .bara3 a,
+    .bara3 input[type=text],
+    .bara3 .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .bara3 input[type=text] {
+        border: 1px solid #ccc;
+        width: 44%;
+        /* Ajustați lățimea la 100% pentru a ocupa întreaga lățime disponibilă */
+        padding-left: 120px;
+        /* Ajustați padding-ul la stânga la dimensiunea dorită */
+    }
+}
+
+
 .container-filtrare-si-produse {
     display: flex;
     flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 17%;
+    margin-right: 17%;
 }
 
 .container-sectiune-filtrare {
-    width: 25%;
+    width: 26%;
     margin-top: 4%;
     background-color: #f0f0f0;
     height: 275px;
