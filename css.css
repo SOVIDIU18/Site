@@ -7,12 +7,12 @@ a {
     text-decoration: none
 }
 
-.page-container {
+/* .page-container {
     max-width: 100%;
     margin-left: 2%;
     margin-right: 2%;
     background-color: #f0f0f0;
-}
+} */
 
 .dark-mode {
     background-color: #1a1a1a;
@@ -183,6 +183,7 @@ a {
 }
 
 .bara3 {
+    overflow: hidden;
     width: 65%;
     font-size: 150%;
     margin: auto;
@@ -200,6 +201,55 @@ a {
 .bara3 ul li a {
     text-decoration: none;
     color: black;
+}
+
+.bara3 .search-container {
+    float: left;
+}
+
+.bara3 input[type=text] {
+    padding-left: 5px;
+    /* Ajustați acest lucru la dimensiunea dorită pentru a muta textul mai la stânga */
+    margin-top: 8px;
+    font-size: 20px;
+    width: 350px;
+    /* Modificați această valoare la dimensiunea dorită pentru a face bara de căutare mai mare */
+}
+
+.bara3 .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .bara3 .search-container {
+        float: none;
+    }
+
+    .bara3 a,
+    .bara3 input[type=text],
+    .bara3 .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .bara3 input[type=text] {
+        border: 1px solid #ccc;
+        width: 44%;
+        /* Ajustați lățimea la 100% pentru a ocupa întreaga lățime disponibilă */
+        padding-left: 120px;
+        /* Ajustați padding-ul la stânga la dimensiunea dorită */
+    }
 }
 
 #range-pret {

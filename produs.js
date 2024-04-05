@@ -1,21 +1,19 @@
-function fct1() {
-    let pretmin = document.getElementById("fromInput").value
-    let pretmax = document.getElementById("toInput").value
+function fcn2(){
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+    console.log(params.get("id"))
     let cerere = axios.get(`http://127.0.0.1:8090/api/collections/centrale/records`, {
         params: {
-            filter: `(pret>=${pretmin} && pret<=${pretmax})`,
+            filter: `(id="${params.get("id")}")`,
             perPage: 100
         }
     }).then(function (response) {
-        // console.log(response.data)
-        let maindiv = document.getElementById("divm");
-
-        for (let i = 0; i < response.data["totalItems"]; i++) {
-
-            let data = response.data["items"][i]
+        console.log(response)
+        let data = response.data["items"][0]
             let nume = data["nume"]
             let pret = data["pret"]
             let stoc = data["stoc"]
+            console.log(`${nume} ${pret} ${stoc}`)
             console.log(`${nume} ${pret} ${stoc}`)
             let centrala = document.createElement("div")
             centrala.className = "element"
@@ -32,7 +30,9 @@ function fct1() {
             nume1.textContent += nume;
             pret1.textContent += pret + " RON " ;
             stoc1.checked = (stoc == "true");
-            
+            let descriere = document.createElement("p");
+            descriere.textContent = data["descriere"]
+            descriere.className = "descriere"
 
             
             centrala.appendChild(poza);
@@ -40,22 +40,10 @@ function fct1() {
             maindiv.appendChild(centrala)
             centrala.appendChild(nume1);
             centrala.appendChild(pret1);
-        }
-        // document.body.append(nume1[])
-    })
+            centrala.appendChild(descriere);
+})
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    let pretmin = document.getElementById("fromInput").addEventListener('change', schimba)
-    let pretmax = document.getElementById("toInput").addEventListener('change', schimba)
-    let pretmin1 = document.getElementById("fromSlider").addEventListener('change', schimba)
-    let pretmax1 = document.getElementById("toSlider").addEventListener('change', schimba)
-    fct1();
+    fcn2()
 });
-
-function schimba() {
-    let maindiv = document.getElementById("divm");
-    maindiv.innerHTML = ""
-    console.log("schimba")
-    fct1()
-}

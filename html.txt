@@ -14,4 +14,8 @@ bara search
 functie de comparare
 favorite
 optimizare pentru telefon
+link spre fisierele cu cartile tehnice
+cum adaug ceva in html fara sa fie in baza de date (exemplu: faza cu descrierea)
+in pagina produsului individual sa nu fie titlul link
+<title> sa fie cu numele produsului
 
