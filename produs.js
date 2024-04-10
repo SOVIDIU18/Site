@@ -38,6 +38,8 @@ function fcn2(){
             let textdescriere = document.createElement("p")
             textdescriere.className = "textdescriere"
             textdescriere.textContent = "Descriere"
+            // let baraprodus = document.createElement("hr")
+            // baraprodus.className = "bara-produs"
             let buton = document.createElement("input")
             buton.type = "button"
             buton.value = "Adaugă în coș"

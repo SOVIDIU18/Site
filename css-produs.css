@@ -190,11 +190,11 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 2.5em;
-    border-top: 1px solid rgb(223, 223, 223);
-    border-radius: 10px;
-    border-bottom: 1px solid rgb(223, 223, 223);
+    border-top: 2px solid rgb(161, 161, 161);
+    border-bottom: 2px solid rgb(161, 161, 161);
     /* padding-right: 0px; */
-    padding-bottom: 50px;
+    padding-bottom: 10%;
+    padding-top: 10%;
     /* width: fit-content; */
 }
 #topdiv{
@@ -210,3 +210,29 @@ a {
     border-radius: 10px;
     padding: 10px 10px;
 }
+
+.textdescriere{
+    font-size: 30px;
+}
+
+.buton{
+    background-color: #11559e;
+    /* culoarea de fundal a butonului */
+    color: white;
+    /* culoarea textului */
+    padding: 10px 20px;
+    /* padding pentru a mări butonul */
+    font-size: 16px;
+    /* dimensiunea textului */
+    border: none;
+    /* eliminarea conturului butonului */
+    cursor: pointer;
+    /* indicator de cursor la hover */
+}
+
+/* .bara-produs{
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    color: rgb(223, 223, 223);
+} */
