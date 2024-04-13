@@ -64,10 +64,10 @@ a {
 
 .wrapper1 {
     background-color: rgb(255, 255, 255);
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     /* Safari */
     top: 0%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .bara1 {
@@ -95,7 +95,7 @@ a {
     /* Safari */
     position: sticky;
     top: 0%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .bara2 {
@@ -146,7 +146,7 @@ a {
     position: -webkit-sticky;
     /* Safari */
     top: 8%;
-    z-index: 1;
+    z-index: 2;
     position: sticky;
 }
 
@@ -228,30 +228,75 @@ a {
     margin-right: 17%;
 }
 
-.container-sectiune-filtrare {
+/* .container-sectiune-filtrare {
     width: 26%;
     margin-top: 4%;
     background-color: #f0f0f0;
-    height: 275px;
+    height: 150px;
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 14%;
+} */
+/* FARA BR IN  PLM */
+.filtrare-producator {
+    width: 100%;
+    margin-top: 4%;
+    background-color: #f0f0f0;
+    height: 165px;
+    /* position: -webkit-sticky; */
+    /* Safari */
+    /* position: sticky; */
+    top: 14%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.filtrare-putere {
+    width: 100%;
+    margin-top: 4%;
+    background-color: #f0f0f0;
+    height: 205px;
+    /* position: -webkit-sticky; */
+    /* Safari */
+    /* position: sticky; */
+    top: 14%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.filtrare-combustibil {
+    width: 100%;
+    margin-top: 4%;
+    background-color: #f0f0f0;
+    height: 105px;
+    /* position: -webkit-sticky; */
+    /* Safari */
+    /* position: sticky; */
+    top: 14%;
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
 .range_container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin-top: 5%;
-    margin-left: 9.5%;
+    background-color: #f0f0f0;
+    padding-top: 5%;
+    padding-left: 5%;
+    height: 3.5%;
+
 }
 
+/* slider in sine */
 .sliders_control {
     position: relative;
     min-height: 50px;
+    margin-top: 15%;
 }
 
+/* asta e pentru text Min Max */
 .form_control {
     position: relative;
     display: flex;
@@ -308,7 +353,7 @@ input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     height: 2px;
-    width: 100%;
+    width: 90%;
     position: absolute;
     background-color: #C6C6C6;
     pointer-events: none;

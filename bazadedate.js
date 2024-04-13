@@ -50,7 +50,8 @@ function fct1() {
             nume1.textContent += nume;
             pret1.textContent += pret + " RON ";
             stoc1.checked = (stoc == "true");
-
+            
+          
 
 
 
@@ -59,6 +60,7 @@ function fct1() {
             maindiv.appendChild(centrala)
             centrala.appendChild(nume1);
             centrala.appendChild(pret1);
+            
         }
         // document.body.append(nume1[])
     })
