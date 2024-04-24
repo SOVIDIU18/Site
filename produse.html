@@ -44,10 +44,12 @@
         <div class="bara3" style="justify-content: flex-end;">
             <ul>
                 <li class="search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Caută un produs..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                    <!-- <form> -->
+                    <input id="baracautare" type="text" placeholder="Caută un produs..." name="search">
+                    <!-- <button onclick="schimba()"><i class="fa fa-search"></i></button> -->
+                    <input id="lupa" onclick="schimba()" type="button" style="font-family: FontAwesome;"
+                        value="&#xf002;">
+                    <!-- </form> -->
                 </li>
                 <li><a href="cos.html"><i class="fa fa-shopping-cart" style="font-size:30px"></i> Coș</a></li>
                 <li><a href="contul meu.html"><i class="fa fa-user" style="font-size:30px"></i> Contul Meu</a></li>
@@ -72,22 +74,28 @@
             <!-- Filtrare-producator -->
             <br>
             <div class="filtrare-producator">
-                <form id="filtrare-producator-form">
-                    <label for="producator" style="font-size: 120%;"><b>Producător:</b></label>
-                    <br>
-                    <br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Toate</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Baxi</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Beretta</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Bosch</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Buderus</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> De Dietrich</label><br>
+                <form id="filtrare-producator-form" style="display: flex; flex-direction: column;">
+                    <label for="producator" style="font-size: 120%; padding-bottom: 0.5em;"><b>Producător:</b></label>
+                    <div>
+                        <input type="checkbox" id="checkboxbaxi" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Baxi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkboxberetta" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Beretta</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkboxbosch" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Bosch</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkboxbuderus" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Buderus</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkboxdedietrich" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> De Dietrich</label>
+                    </div>
                     <!-- <select id="producator" name="producator" onchange="filterProducts()">
                         <option value="toate">Toate</option>
                         <option value="Baxi">Baxi</option>
@@ -99,28 +107,113 @@
                 </form>
             </div>
             <br>
-            <!-- Filtrare-putere -->
-            <div class="filtrare-putere">
-                <form id="filtrare-putere-form">
-                    <label for="putere" style="font-size: 120%;"><b>Putere (kW):</b></label>
-                    <br>
-                    <br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Toate</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> &lt;10 </label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> 11-20</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> 21-30</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> 31-40</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> 41-50</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> 51-60</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> &gt;60</label><br>
+            <!-- Filtrare-putere încălzire-->
+            <div class="filtrare-putere-încălzire">
+                <form id="filtrare-putere-form" style="display: flex; flex-direction: column;">
+                    <label for="putere" style="font-size: 120%; padding-bottom: 0.5em;"><b>Putere încălzire (kW):</b></label>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire10" name="vehicle2" value="Car">
+                    <label for="vehicle2"> &lt;10 </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire11_20" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 11-20</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire21_30" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 21-30</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire31_40" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 31-40</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire41_50" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 41-50</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire51_60" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 51-60</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxîncălzire61_70" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 61-70</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chackboxîncălzire71_80" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 71-80</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chackboxîncălzire81_90" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 81-90</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chackboxîncălzire91_100" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 91-100</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chackboxîncălzire100" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 	&gt;100</label>
+                </div>
+                    <!-- <select id="putere" name="putere" onchange="filterProducts()">
+                        <option value="toate">Toate</option>
+                        <option value="2030">20-30</option>
+                        <option value="31">31-40</option>
+                        <option value="41-50">41-50</option>
+                        <option value="51-60">51-60</option>
+                        <option value="61-70">61-70</option>
+                    </select> -->
+                </form>
+            </div>
+            <br>
+            <!-- Filtrare-putere menajeră -->
+            <div class="filtrare-putere-ACM">
+                <form id="filtrare-putere-form" style="display: flex; flex-direction: column;">
+                    <label for="putere" style="font-size: 120%; padding-bottom: 0.5em;"><b>Putere apă caldă menajeră (kW):</b></label>
+                <div>
+                    <input type="checkbox" id="checkboxACM10" name="vehicle2" value="Car">
+                    <label for="vehicle2"> &lt;10 </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM11_20" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 11-20</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM21_30" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 21-30</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM31_40" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 31-40</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM41_50" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 41-50</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM51_60" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 51-60</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM61_70" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 61-70</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM71_80" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 71-80</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM81_90" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 81-90</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM91_100" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 91-100</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxACM100" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> 	&gt;100</label>
+                </div>
                     <!-- <select id="putere" name="putere" onchange="filterProducts()">
                         <option value="toate">Toate</option>
                         <option value="2030">20-30</option>
@@ -134,16 +227,16 @@
             <br>
             <!-- Filtrare-combustibil -->
             <div class="filtrare-combustibil">
-                <form id="filtrare-combustibil-form">
-                    <label for="combustibil" style="font-size: 120%;"><b>Combustibil:</b></label>
-                    <br>
-                    <br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Toate</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <form id="filtrare-combustibil-form" style="display: flex; flex-direction: column;">
+                    <label for="tip_combustibil" style="font-size: 120%; padding-bottom: 0.5em;"><b>Combustibil:</b></label>
+                <div>
+                    <input type="checkbox" id="checkboxgaz" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Gaz</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxcurentelectric" name="vehicle2" value="Car">
                     <label for="vehicle2"> Curent</label><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Gaz</label><br>
+                </div>
 
                     <!-- <select id="combustibil" name="combustibil" onchange="filterProducts()">
                         <option value="toate">Toate</option>

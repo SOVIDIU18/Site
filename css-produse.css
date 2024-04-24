@@ -184,7 +184,7 @@ a {
     /* Modificați această valoare la dimensiunea dorită pentru a face bara de căutare mai mare */
 }
 
-.bara3 .search-container button {
+/* .bara3 .search-container button {
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
@@ -193,14 +193,21 @@ a {
     font-size: 15px;
     border: none;
     cursor: pointer;
+} */
+#lupa {
+    font-size: 90%;
+    margin-left: -1.5%;
+    width: 10%;
+    height: 29px;
 }
+
 
 @media screen and (max-width: 600px) {
     .bara3 .search-container {
         float: none;
     }
 
-    .bara3 a,
+    /* .bara3 a,
     .bara3 input[type=text],
     .bara3 .search-container button {
         float: none;
@@ -209,7 +216,7 @@ a {
         width: 100%;
         margin: 0;
         padding: 14px;
-    }
+    } */
 
     .bara3 input[type=text] {
         border: 1px solid #ccc;
@@ -242,7 +249,7 @@ a {
     width: 100%;
     margin-top: 4%;
     background-color: #f0f0f0;
-    height: 165px;
+    height: 145px;
     /* position: -webkit-sticky; */
     /* Safari */
     /* position: sticky; */
@@ -251,11 +258,24 @@ a {
     padding-left: 5%;
 }
 
-.filtrare-putere {
+.filtrare-putere-încălzire {
     width: 100%;
     margin-top: 4%;
     background-color: #f0f0f0;
-    height: 205px;
+    height: 265px;
+    /* position: -webkit-sticky; */
+    /* Safari */
+    /* position: sticky; */
+    top: 14%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.filtrare-putere-ACM {
+    width: 100%;
+    margin-top: 4%;
+    background-color: #f0f0f0;
+    height: 285px;
     /* position: -webkit-sticky; */
     /* Safari */
     /* position: sticky; */
@@ -268,7 +288,7 @@ a {
     width: 100%;
     margin-top: 4%;
     background-color: #f0f0f0;
-    height: 105px;
+    height: 85px;
     /* position: -webkit-sticky; */
     /* Safari */
     /* position: sticky; */
@@ -285,7 +305,9 @@ a {
     background-color: #f0f0f0;
     padding-top: 5%;
     padding-left: 5%;
-    height: 3.5%;
+    height: 11em; 
+    /* em foloseste marimea fontului din container, iar rem pe cea din html si % ia din marimea parintelui*/
+    /* <br/> e la fel ca un br normal */
 
 }
 
