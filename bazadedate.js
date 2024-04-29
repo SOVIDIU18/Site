@@ -81,12 +81,12 @@ function fct1() {
         producator += `producator ~ "dedietrich"`
 
     }
-    if(producator.length >0){
+    if (producator.length > 0) {
         producator += ")"
         filtre += producator
     }
     // filtre += ")"
-    let putere_încălzire = ""
+    let putere_incalzire_nr = ""
     let checkboxîncălzire10 = document.getElementById("checkboxîncălzire10")
     let checkboxîncălzire11_20 = document.getElementById("checkboxîncălzire11_20")
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30")
@@ -100,135 +100,133 @@ function fct1() {
     let checkboxîncălzire100 = document.getElementById("checkboxîncălzire100")
 
     if (checkboxîncălzire10.checked) {
-        putere_încălzire += "&& ( "
-        putere_încălzire += `putere_încălzire ~ "<10"`
+        putere_incalzire_nr += "&&("
+        putere_incalzire_nr += `putere_incalzire_nr <= 10`
     }
     if (checkboxîncălzire11_20.checked) {
-        if (11<= putere_încălzire <= 20) {
-            putere_încălzire += "&& ( "
-
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ ""`
-
+        putere_incalzire_nr += 'putere_incalzire_nr >= 11 && putere_incalzire_nr<=20'
     }
     if (checkboxîncălzire21_30.checked) {
-        if (21<= putere_încălzire <= 30) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 21 && putere_incalzire_nr<=30'
 
     }
     if (checkboxîncălzire31_40.checked) {
-        if (31<= putere_încălzire <= 40) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 31 && putere_incalzire_nr<=40'
 
     }
     if (checkboxîncălzire41_50.checked) {
-        if (41<= putere_încălzire <= 50) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 41 && putere_incalzire_nr<=50'
 
     }
     if (checkboxîncălzire51_60.checked) {
-        if (51<= putere_încălzire <= 60) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 51 && putere_incalzire_nr<=60'
 
     }
     if (checkboxîncălzire61_70.checked) {
-        if (61<= putere_încălzire <= 70) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 61 && putere_incalzire_nr<=70'
 
     }
-    if (checkboxîncălzire71_80.checked) {
-        if (71<= putere_încălzire <= 80) {
-            putere_încălzire += "&& ( "
+    // if (checkboxîncălzire71_80.checked) {
+    //     if (putere_incalzire_nr.length <= 0) {
+    //         putere_incalzire_nr += "&& ( "
 
-        }
-        else {
-            putere_încălzire += "||"
-        }
+    //     }
+    //     else {
+    //         putere_incalzire_nr += "||"
+    //     }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+    //     putere_incalzire_nr += 'putere_incalzire_nr >= 71 && putere_incalzire_nr<=80'
 
-    }
+    // }
     if (checkboxîncălzire81_90.checked) {
-        if (81<= putere_încălzire <= 90) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 81 && putere_incalzire_nr<=90'
 
     }
     if (checkboxîncălzire91_100.checked) {
-        if (91<= putere_încălzire <= 100) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 91 && putere_incalzire_nr<=100'
 
     }
     if (checkboxîncălzire100.checked) {
-        if (101<= putere_încălzire) {
-            putere_încălzire += "&& ( "
+        if (putere_incalzire_nr.length <= 0) {
+            putere_incalzire_nr += "&& ( "
 
         }
         else {
-            putere_încălzire += "||"
+            putere_incalzire_nr += "||"
         }
 
-        putere_încălzire += `putere_încălzire ~ "curent electric"`
+        putere_incalzire_nr += 'putere_incalzire_nr >= 101'
 
     }
 
-    if(putere_încălzire>0){
-        putere_încălzire += ")"
-        filtre += putere_încălzire
+    if (putere_incalzire_nr.length > 0) {
+        putere_incalzire_nr += ")"
+        filtre += putere_incalzire_nr
     }
-
+    // filtre += ")"
 
     // let checkboxACM10 = document.getElementById("checkboxACM10")
     // let checkboxACM11_20 = document.getElementById("checkboxACM11_20")
@@ -261,7 +259,7 @@ function fct1() {
         tip_combustibil += `tip_combustibil ~ "curent electric"`
 
     }
-    if(tip_combustibil.length >0){
+    if (tip_combustibil.length > 0) {
         tip_combustibil += ")"
         filtre += tip_combustibil
     }
@@ -284,7 +282,7 @@ function fct1() {
             let nume = data["nume"]
             let pret = data["pret"]
             let stoc = data["stoc"]
-            console.log(`${nume} ${pret} ${stoc}`)
+            // console.log(`${nume} ${pret} ${stoc}`)
             let centrala = document.createElement("div")
             centrala.className = "element"
             let nume1 = document.createElement("a");
@@ -338,10 +336,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxîncălzire41_50 = document.getElementById("checkboxîncălzire41_50").addEventListener('change', schimba)
     let checkboxîncălzire51_60 = document.getElementById("checkboxîncălzire51_60").addEventListener('change', schimba)
     let checkboxîncălzire61_70 = document.getElementById("checkboxîncălzire61_70").addEventListener('change', schimba)
-    let chackboxîncălzire71_80 = document.getElementById("chackboxîncălzire71_80").addEventListener('change', schimba)
-    let chackboxîncălzire81_90 = document.getElementById("chackboxîncălzire81_90").addEventListener('change', schimba)
-    let chackboxîncălzire91_100 = document.getElementById("chackboxîncălzire91_100").addEventListener('change', schimba)
-    let chackboxîncălzire100 = document.getElementById("chackboxîncălzire100").addEventListener('change', schimba)
+    // let checkboxîncălzire71_80 = document.getElementById("checkboxîncălzire71_80").addEventListener('change', schimba)
+    let checkboxîncălzire81_90 = document.getElementById("checkboxîncălzire81_90").addEventListener('change', schimba)
+    let checkboxîncălzire91_100 = document.getElementById("checkboxîncălzire91_100").addEventListener('change', schimba)
+    let checkboxîncălzire100 = document.getElementById("checkboxîncălzire100").addEventListener('change', schimba)
     fct1()
 });
 
