@@ -427,12 +427,21 @@ function fct1() {
             nume1.textContent += nume;
             pret1.textContent += pret + " RON ";
             stoc1.checked = (stoc == "true");
-
-
+            let favorite = document.createElement("input");
+            favorite.type = "button";
+            favorite.value = "\uf004";
+            // favorite.style = "font-family: FontAwesome; background: transparent; border: 0;"
+            favorite.id = data["id"]
+            favorite.onclick = () => adaugalafavorite(data["id"]);
+            favorite.className = "favorite";
+            if (checkCookieExistence(favorite.id)) {
+                favorite.classList.add("fundal-rosu")  
+            }
 
 
 
             centrala.appendChild(poza);
+            centrala.appendChild(favorite);
             // centrala.appendChild(stoc1);
             maindiv.appendChild(centrala)
             centrala.appendChild(nume1);
@@ -497,4 +506,28 @@ function schimba() {
 
 function cauta() {
     fct1();
+}
+
+function adaugalafavorite(id) {
+    let centrala = document.getElementById(id)
+    if (!checkCookieExistence(id)) {
+        document.cookie = `${id} = 1`
+        centrala.classList.add("fundal-rosu")  
+    }
+    else {
+        document.cookie = `${id} = ; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`
+        centrala.classList.remove("fundal-rosu")
+        
+    }
+}
+
+function checkCookieExistence(cookieName) {
+    let cookies = document.cookie.split('; ');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookiePair = cookies[i].split('=');
+        if (cookiePair[0] === cookieName) {
+            return true; // Cookie found
+        }
+    }
+    return false; // Cookie not found
 }
