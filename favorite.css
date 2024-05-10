@@ -1,8 +1,13 @@
-.fundal-rosu{
+.fundal-rosu {
     color: red !important;
 }
-.favorite{
-    font-family: FontAwesome; 
-    background: transparent; 
+
+.favorite {
+    font-family: FontAwesome;
+    background: transparent;
     border: 0;
+    margin-left: 6em;
+    z-index: 1;
+    font-size: 2em;
+
 }

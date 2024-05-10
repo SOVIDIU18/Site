@@ -184,6 +184,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 2.5em;
+    overflow-wrap: break-word;
 }
 
 .pret {
@@ -228,6 +229,22 @@ a {
     /* eliminarea conturului butonului */
     cursor: pointer;
     /* indicator de cursor la hover */
+}
+
+.favoriteprodus{
+    background-color: #d8d7d7;
+    /* culoarea de fundal a butonului */
+    color: black;
+    /* culoarea textului */
+    padding: 10px 20px;
+    /* padding pentru a mări butonul */
+    font-size: 16px;
+    /* dimensiunea textului */
+    border: none;
+    /* eliminarea conturului butonului */
+    cursor: pointer;
+    /* indicator de cursor la hover */
+    margin-left: 10em;;
 }
 
 /* .bara-produs{

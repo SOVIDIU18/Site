@@ -45,6 +45,11 @@ function fcn2(){
             buton.value = "Adaugă în coș"
             buton.className="buton"
             // buton.onclick= 
+            let favoritprodus = document.createElement("input")
+            favoritprodus.type = "button"
+            favoritprodus.value = "Adaugă la favorite"
+            favoritprodus.className="favoriteprodus"
+            // buton.onclick=
 
             maindiv.appendChild(centrala)
             pozadiv.appendChild(poza);
@@ -53,6 +58,7 @@ function fcn2(){
             titludiv.appendChild(nume1);
             titludiv.appendChild(pret1);
             titludiv.appendChild(buton)
+            titludiv.appendChild(favoritprodus)
             centrala.appendChild(textdescriere);
             centrala.appendChild(descriere);
 })

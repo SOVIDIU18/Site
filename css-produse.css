@@ -17,7 +17,6 @@ a {
     height: 10rem;
 }
 
-/* DE MODIFICAT PT DIST DINTRE CENTRALE */
 .element {
     flex-direction: row;
     width: 25%;
@@ -31,7 +30,6 @@ a {
     color: #11559e;
     text-align: center;
     margin-top: 3%;
-
 }
 
 .pret {

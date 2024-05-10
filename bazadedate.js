@@ -439,13 +439,13 @@ function fct1() {
             }
 
 
-
-            centrala.appendChild(poza);
             centrala.appendChild(favorite);
+            centrala.appendChild(poza);
             // centrala.appendChild(stoc1);
-            maindiv.appendChild(centrala)
+            maindiv.appendChild(centrala);
             centrala.appendChild(nume1);
             centrala.appendChild(pret1);
+           
 
         }
         // document.body.append(nume1[])
