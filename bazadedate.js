@@ -438,9 +438,11 @@ function fct1() {
                 favorite.classList.add("fundal-rosu")  
             }
 
-
+            let linkpoza = document.createElement("a")
+            linkpoza.href = "/produs.html?id=" + data["id"]
+            linkpoza.appendChild(poza)
             centrala.appendChild(favorite);
-            centrala.appendChild(poza);
+            centrala.appendChild(linkpoza);
             // centrala.appendChild(stoc1);
             maindiv.appendChild(centrala);
             centrala.appendChild(nume1);

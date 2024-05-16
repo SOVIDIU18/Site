@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css-cont.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/pocketbase/js-sdk@master/dist/pocketbase.umd.js"></script>
-    <script src="cont.js"></script>
+    <script src="register.js"></script>
     <title>Contul Meu</title>
 </head>
 
@@ -54,14 +54,14 @@
         </div>
 
     </div>
-    <Div class="cont">
-        <p>Email:</p>
-        <input id="email">
-        <p>Parola:</p>
-        <input id="password" type="password">
-        <button onclick="login()">Intrare in cont</button>
-        <button onclick="location.href=`/register.html`">Creare cont</button>
-        <button onclick="stergerecont()">Stergere cont</button>
+    <div class="cont">
+    <p>Email:</p>
+    <input id="email">
+    <p>Parola:</p>
+    <input id="password" type="password">
+    <p>Confirmați parola:</p>
+    <input id="passwordconfirmed" type="password">
+    <p><button onclick="inregistrare()">Creare cont</button></p>
     </div>
 </body>
 

@@ -1,7 +1,7 @@
 function loadfavorite() {
     let cookieNames = document.cookie.split('; ').map(cookie => cookie.split('=')[0]);
-    cookieNames.shift();
-    console.log(cookieNames);
+    // cookieNames.shift();
+    // console.log(cookieNames);
     let filtre = "("
     for (let centrala of cookieNames) {
         filtre += `id="${centrala}"||`
@@ -22,8 +22,8 @@ function loadfavorite() {
             let pret = data["pret"]
             let stoc = data["stoc"]
             let centrala = document.createElement("div")
-            centrala.className = "element"
-            let nume1 = document.createElement("a");
+            centrala.className = "element" //daca vreau sa modific tot ce e in favorite
+            let nume1 = document.createElement("p");
             nume1.className = "text"
             nume1.href = "/produs.html?id=" + data["id"]
             let pret1 = document.createElement("p");
@@ -42,6 +42,7 @@ function loadfavorite() {
             favorite.style = "font-family: FontAwesome;"
             favorite.onclick = () => adaugalafavorite(data["id"]);
             favorite.className = "favorite";
+            //clasa noua pt editare in favorite + css nou
 
 
 
