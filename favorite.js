@@ -23,7 +23,7 @@ function loadfavorite() {
             let stoc = data["stoc"]
             let centrala = document.createElement("div")
             centrala.className = "element" //daca vreau sa modific tot ce e in favorite
-            let nume1 = document.createElement("p");
+            let nume1 = document.createElement("a");
             nume1.className = "text"
             nume1.href = "/produs.html?id=" + data["id"]
             let pret1 = document.createElement("p");
@@ -43,11 +43,13 @@ function loadfavorite() {
             favorite.onclick = () => adaugalafavorite(data["id"]);
             favorite.className = "favorite";
             //clasa noua pt editare in favorite + css nou
+            let linkpoza = document.createElement("a")
+            linkpoza.href = "/produs.html?id=" + data["id"]
 
 
 
-
-            centrala.appendChild(poza);
+            linkpoza.appendChild(poza)
+            centrala.appendChild(linkpoza);
             centrala.appendChild(favorite);
             // centrala.appendChild(stoc1);
             maindiv.appendChild(centrala)
