@@ -165,36 +165,77 @@ a {
     }
 }
 
-.cont {
-    margin: auto;
-    width: 17em;
-    text-align: center;
-    font-size: 1.6em;
-}
-
-.cont input {
-    padding: 3%;
+.principal-favorite{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    padding: 0;
     width: 100%;
-    font-size: 80%;
-    border-width: 0.3em;
-    border-radius: 30px;
-    border-color: #11559e;
-    box-sizing: border-box;
+    height: 10rem;
 }
 
-.buton-albastru {
-    cursor: pointer;
-    font-size: 25px;
-    border-radius: 15px;
-    padding:10px 30px;
-    background-color: #11559e;
-    color: white;
+.element {
+    flex-direction: row;
+    width: 25%;
+    overflow-wrap: break-word;
+    text-align: center;
+    height: 25rem;
 }
 
-.buton-alb{
-    cursor: pointer;
-    font-size: 25px;
-    border-radius: 15px;
-    padding:10px 30px;
-    background-color: white;
+.text {
+    font-size: 125%;
+    color: #11559e;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.pret {
+    color: black;
+    font-size: 150%;
+    margin-top: -7%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.imagine {
+    width: 250px;
+    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+.imagine:hover {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease;
+    z-index: auto;
+}
+
+.imagine:not(:hover) {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease;
+}
+
+.container-produse-favorite{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.fundal-rosu {
+    color: red !important;
+}
+
+.favorite {
+    font-family: FontAwesome;
+    background: transparent;
+    border: 0;
+    margin-left: 6em;
+    z-index: 1;
+    font-size: 2em;
+
 }

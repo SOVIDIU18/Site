@@ -1,6 +1,3 @@
-sa mearga filtrarile
-la data-putere puterile nu sunt separate (nu merg caractere speciale) ex: 20-30 este 2030 inca nu
-de adaugat toti producatorii si puterile
 cautare imagini mai frumix
 dark mode
 tranzitie mai faina la home
@@ -8,15 +5,17 @@ poate ceva scris la home
 
 
 la fiecare produs cosmetizare, adica width, margin-top, margin-bottom etc (folosindu-ne de container-produs si titlu-produs si altele daca e nevoie)
-de facut conturi
+de facut la conturi:
+ - functie forgot password
+ - functie de delogare
+ - cand creezi un cont nou, sa fii logat automat cu acel cont
+ - de facut pagina "contul meu"
+ - mesaje de eroare (cand gresesti parola sau mailul, cand parola e prea scurta, cand se efectueaza crearea unui cont cu o adresa de mail deja existenta etc)
 de facut pagina coș
-bara search
 functie de comparare
 favorite
 optimizare pentru telefon
 link spre fisierele cu cartile tehnice
-cum adaug ceva in html fara sa fie in baza de date (exemplu: faza cu descrierea)
-in pagina produsului individual sa nu fie titlul link
 <title> sa fie cu numele produsului
-diacritice de la mynute x 40c pana la tronic heat 24K inclusiv
+
 
