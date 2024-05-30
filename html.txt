@@ -11,11 +11,15 @@ de facut la conturi:
  - cand creezi un cont nou, sa fii logat automat cu acel cont
  - de facut pagina "contul meu"
  - mesaje de eroare (cand gresesti parola sau mailul, cand parola e prea scurta, cand se efectueaza crearea unui cont cu o adresa de mail deja existenta etc)
+ - daca nu introduci nimic la mail iti creeaza un cont fara email
+ - popup cand incerci sa creezi un cont cu un email care deja are un cont asociat
 de facut pagina coș
 functie de comparare
-favorite
+favorite (inima peste centrala)
 optimizare pentru telefon
 link spre fisierele cu cartile tehnice
 <title> sa fie cu numele produsului
+cand intram in cont, sa mergem pe o pagina noua, pe care sa apara schimba email, schimba parola, si buton stergere cont, care sa nu apara si atunci cand creezi cont
+ben 10
 
 

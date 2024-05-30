@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css-cos.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="bazadedate.js"></script>
-    <title>Coș</title>
+    <script src="https://cdn.jsdelivr.net/gh/pocketbase/js-sdk@master/dist/pocketbase.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+    <script src="schimbadate.js"></script>
+    <link rel="stylesheet" href="css-schimbadate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper1">
         <div class="bara1" style="justify-content: flex-end;">
@@ -18,8 +21,7 @@
                 <li><i class="fa fa-phone"></i> 0256 227 227 (service)</li>
                 <li><a
                         href="https://www.google.com/maps?ll=45.739328,21.219543&z=17&t=m&hl=en-US&gl=RO&mapclient=embed&q=Strada+Ciprian+Porumbescu+43+Timi%C8%99oara+300425"><i
-                            class="fa fa-map-marker"></i> Str. Ciprian Porumbescu, Nr.
-                        43</a></li>
+                            class="fa fa-map-marker"></i> Str. Ciprian Porumbescu, Nr. 43</a></li>
                 <li><i class="fa fa-envelope"></i> contcaresrl@gmail.com</li>
             </ul>
         </div>
@@ -45,14 +47,34 @@
             </ul>
         </div>
     </div>
-    <div style="margin-left: 17%; margin-right: 17%;">
-        <div class="principal-favorite" id="maindiv">
-            <div id="maindiv">
+    <p class="sunteti-conectat">Sunteți conectat!</p>
+    <div class="schimbadate">
+        <div class="resetare-parola">
+            <p style="font-size: 1.5em; text-decoration: underline;">Schimbă parola</p>
+            <p>Parola veche:</p>
+            <input id="passwordold" type="password" minlength="8" required>
 
-            </div>
+            <p>Parola nouă:</p>
+            <input id="password" type="password" minlength="8" required>
+
+            <p>Reintroduce-ți noua parolă:</p>
+            <input id="password" type="password" minlength="8" required>
+            <p><button onclick="schimbaparola()" class="button">Resetare parolă</button></p>
+        </div>
+        <div class="resetare-email">
+            <p style="font-size: 1.5em; text-decoration: underline;">Schimbă email-ul</p>
+            <p>Email vechi:</p>
+            <input id="emailold">
+
+            <p>Email nou:</p>
+            <input id="email">
+
+            <p>Reintroduce-ți noul email:</p>
+            <input id="email">
+            <p><button onclick="schimbaparola()" class="button">Resetare email</button></p>
         </div>
     </div>
-</div>
+    <p style="text-align: center;"><button onclick="stergerecont()" class="buton-alb">Ștergere cont</button></p>
 </body>
 
 </html>
