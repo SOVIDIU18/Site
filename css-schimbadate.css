@@ -141,13 +141,15 @@ a {
 }
 
 .resetare-parola input {
-    padding: 3%;
-    width: 100%;
+     padding: 3%;
+    width: calc(100% + 20px); /* Ajustează valoarea pentru a mări caseta */
     font-size: 80%;
     border-width: 0.3em;
     border-radius: 30px;
     border-color: #11559e;
     box-sizing: border-box;
+    margin-left: -10px; /* Jumătate din valoarea adăugată la width pentru a extinde spre stânga */
+    margin-right: -10px; /* Jumătate din valoarea adăugată la width pentru a extinde spre dreapta */
 }
 
 .resetare-email {
@@ -164,12 +166,14 @@ a {
 
 .resetare-email input {
     padding: 3%;
-    /* width: 100%; */
+    width: calc(100% + 20px); /* Ajustează valoarea pentru a mări caseta */
     font-size: 80%;
     border-width: 0.3em;
     border-radius: 30px;
     border-color: #11559e;
     box-sizing: border-box;
+    margin-left: -10px; /* Jumătate din valoarea adăugată la width pentru a extinde spre stânga */
+    margin-right: -10px; /* Jumătate din valoarea adăugată la width pentru a extinde spre dreapta */
 }
 
 .button{

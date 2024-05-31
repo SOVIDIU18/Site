@@ -2,6 +2,14 @@
     color: red !important;
 }
 
+.favorite {
+    font-family: FontAwesome;
+    background: transparent;
+    border: 0;
+    margin-left: 4.5em;
+    z-index: 1;
+    font-size: 2em;
+}
 
 .element {
     position: relative; /* Containerul imaginii produsului */
@@ -11,10 +19,8 @@
     box-sizing: border-box; /* Asigură-te că margin-ul este inclus în lățimea elementului */
 }
 
+.element:hover .imagine,
 .element:hover .favorite {
-    transform: scale(1.2); /* Mărește atât imaginea cât și inima */
-}
-.element:hover .imagine {
     transform: scale(1.1); /* Mărește atât imaginea cât și inima */
 }
 
@@ -27,21 +33,17 @@
 
 .favorite {
     font-family: FontAwesome;
-    /* background: transparent; */
+    background: transparent;
+    border: 0;
     position: absolute;
     top: 10px; /* Ajustează această valoare pentru a schimba poziția verticală */
-    right: 20px; /* Ajustează această valoare pentru a schimba poziția orizontală */
+    right: 10px; /* Ajustează această valoare pentru a schimba poziția orizontală */
     z-index: 1;
     font-size: 2em;
     color: black; /* Inițial, inima este neagră */
     transition: transform 0.3s ease; /* Tranziție pentru inimă */
-    /* border-style: solid; */
-    border-width: 4px;
-    border-radius: 50%;
-    /* border: 0; */
-    margin-left: 4.5em;
-    border-color: #11559e;
-
-   
 }
 
+.favorite.red {
+    color: red; /* Inima devine roșie când are clasa .red */
+}

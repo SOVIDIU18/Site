@@ -19,10 +19,9 @@ a {
 
 .element {
     flex-direction: row;
-    width: 25%;
     overflow-wrap: break-word;
     text-align: center;
-    height: 21rem;
+    height: 20rem;
 }
 
 .text {
@@ -40,14 +39,13 @@ a {
     margin: 0 auto;
 }
 
-.imagine {
-    width: 250px;
+ /* .imagine {
+    width: 10px;
     display: flex;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
-}
+}  */
 
 .imagine:hover {
     transform: scale(1.1);

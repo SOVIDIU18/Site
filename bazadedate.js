@@ -424,6 +424,7 @@ function fct1() {
             let poza = document.createElement("img");
             poza.className = "imagine"
             poza.src = "date site\\Site Contcare\\Produse\\Beretta\\Power Max 65P (sistem)\\Power_Max_-_Imagine-removebg-preview.png"
+            // poza.src = `SITE\date site\Site Contcare\Produse` + data['imagine']
             nume1.textContent += nume;
             pret1.textContent += pret + " RON ";
             stoc1.checked = (stoc == "true");
