@@ -1,6 +1,9 @@
+// import PocketBase from 'pocketbase';
+
+const pb = new PocketBase('http://127.0.0.1:8090');
 let folosestecautare = false;
 
-function fct1() {
+async function fct1() {
     let pretmin = document.getElementById("fromInput").value
     let pretmax = document.getElementById("toInput").value
     let ordonare = document.getElementById("ordonare_suma").selectedIndex;
@@ -401,7 +404,7 @@ function fct1() {
             perPage: 100,
             sort: sorting
         }
-    }).then(function (response) {
+    }).then(async function (response) {
         // console.log(response.data)
         let maindiv = document.getElementById("divm");
 
@@ -423,8 +426,7 @@ function fct1() {
             stoc1.type = "checkbox";
             let poza = document.createElement("img");
             poza.className = "imagine"
-            poza.src = "date site\\Site Contcare\\Produse\\Beretta\\Power Max 65P (sistem)\\Power_Max_-_Imagine-removebg-preview.png"
-            // poza.src = `SITE\date site\Site Contcare\Produse` + data['imagine']
+            poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
             nume1.textContent += nume;
             pret1.textContent += pret + " RON ";
             stoc1.checked = (stoc == "true");
@@ -436,7 +438,7 @@ function fct1() {
             favorite.onclick = () => adaugalafavorite(data["id"]);
             favorite.className = "favorite";
             if (checkCookieExistence(favorite.id)) {
-                favorite.classList.add("fundal-rosu")  
+                favorite.classList.add("fundal-rosu")
             }
 
             let linkpoza = document.createElement("a")
@@ -448,7 +450,7 @@ function fct1() {
             maindiv.appendChild(centrala);
             centrala.appendChild(nume1);
             centrala.appendChild(pret1);
-           
+
 
         }
         // document.body.append(nume1[])
@@ -515,12 +517,12 @@ function adaugalafavorite(id) {
     let centrala = document.getElementById(id)
     if (!checkCookieExistence(id)) {
         document.cookie = `${id} = 1`
-        centrala.classList.add("fundal-rosu")  
+        centrala.classList.add("fundal-rosu")
     }
     else {
         document.cookie = `${id} = ; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`
         centrala.classList.remove("fundal-rosu")
-        
+
     }
 }
 

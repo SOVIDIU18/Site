@@ -44,7 +44,24 @@ async function inregistrare() {
 
         return;
     }
+if(email.value <= 0){
+    const myPopup = new Popup({
+        id: "my-popup",
+        // css: `
+     
+        //     .popup {
+        //         backgroundColor: red;
+        //     }
+        // `,
+        title: "Eroare",
+        content: `Emailul nu poate fi gol.`,
+        showImmediately: true
+    });
 
+    setTimeout(() => {
+        myPopup.hide();
+    }, 2000);
+}
     const data = {
         // "username": "test_username",
         "email": email.value,

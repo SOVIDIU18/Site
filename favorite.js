@@ -33,7 +33,7 @@ function loadfavorite() {
             
             let poza = document.createElement("img");
             poza.className = "imagine"
-            poza.src = "date site\\Site Contcare\\Produse\\Beretta\\Power Max 65P (sistem)\\Power_Max_-_Imagine-removebg-preview.png"
+            poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
             
             let favorite = document.createElement("input");
             favorite.type = "button";

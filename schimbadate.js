@@ -13,16 +13,21 @@ async function schimbaparola() {
     let id = getCookie("id_user")
     let parolaveche = document.getElementById("passwordold")
     let parolanoua = document.getElementById("password")
+    console.log(getCookie("id_user"))
+    const record2 = await pb.collection('users').getOne(getCookie('id_user'));
+    console.log(record2["email"])
+
+
     const data = {
-        "username": "test_username_update",
-        "emailVisibility": false,
+        // "username": "test_username_update",
+        // "emailVisibility": false,
         "password": parolanoua.value,
         "passwordConfirm": parolanoua.value,
         "oldPassword": parolaveche.value,
-        "name": "test"
+        // "name": "test"
     };
     const authData = await pb.collection('users').authWithPassword(
-        'email8@yahoo.com',
+        `${record2["email"]}`,
         parolaveche.value,
     );
     const record = await pb.collection('users').update(id, data);
