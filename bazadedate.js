@@ -2,13 +2,17 @@
 
 const pb = new PocketBase('http://127.0.0.1:8090');
 let folosestecautare = false;
-
+function schimbacautare(nume){
+    let cautare = document.getElementById("baracautare").value; 
+    cautare = nume;
+    schimba();
+}
 async function fct1() {
     let pretmin = document.getElementById("fromInput").value
     let pretmax = document.getElementById("toInput").value
     let ordonare = document.getElementById("ordonare_suma").selectedIndex;
     let sorting;
-    let cautare = document.getElementById("baracautare").value;
+    let cautare = document.getElementById("baracautare").value; 
     switch (ordonare) {
         case 1:
             sorting = '+nume'
@@ -494,6 +498,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxACM81_90 = document.getElementById("checkboxACM81_90").addEventListener('change', schimba)
     let checkboxACM91_100 = document.getElementById("checkboxACM91_100").addEventListener('change', schimba)
     let checkboxACM100 = document.getElementById("checkboxACM100").addEventListener('change', schimba)
+    let params = new URLSearchParams(window.location.search)
+    const data = params.get("cautare")
+    document.getElementById("baracautare").value = data
+    console.log(data)
     fct1()
 });
 

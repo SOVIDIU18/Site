@@ -152,3 +152,38 @@ async function schimbaemail() {
         }, 2000);
     }
 }
+async function stergerecont() {
+    try {
+        const userId = getCookie("id_user");
+        console.log(userId);
+        
+        await pb.collection('users').delete(userId);
+
+        // Pop-up de succes
+        const successPopup = new Popup({
+            id: "success-popup",
+            title: "Succes",
+            content: `Contul a fost șters cu succes.`,
+            showImmediately: true
+        });
+
+        setTimeout(() => {
+            successPopup.hide();
+        }, 2000);
+    } catch (error) {
+        console.error("Eroare la ștergerea contului:", error);
+        
+        // Pop-up de eroare (opțional)
+        const errorPopup = new Popup({
+            id: "error-popup",
+            title: "Eroare",
+            content: `A apărut o problemă la ștergerea contului.`,
+            showImmediately: true
+        });
+
+        setTimeout(() => {
+            errorPopup.hide();
+        }, 2000);
+    }
+}
+

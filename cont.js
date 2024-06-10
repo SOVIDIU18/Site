@@ -41,7 +41,5 @@ function getCookie(name) {
     }
     return null;
 }
-async function stergerecont() {
-    await pb.collection('users').delete(getCookie("id_user"));
-}
+
 

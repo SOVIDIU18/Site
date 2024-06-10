@@ -21,7 +21,8 @@ a {
     flex-direction: row;
     overflow-wrap: break-word;
     text-align: center;
-    height: 25rem;
+    height: 25rem; 
+    /* modificare inaltime intre 2 randuri atunci cand filtrarea afiseaza doar doua randuri */
 }
 
 .text {
