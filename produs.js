@@ -28,7 +28,7 @@ function fcn2(){
             stoc1.type = "checkbox";
             let poza = document.createElement("img");
             poza.className = "imagine"
-           poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
+            poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
             nume1.textContent += nume;
             pret1.textContent += pret + " RON " ;
             stoc1.checked = (stoc == "true");

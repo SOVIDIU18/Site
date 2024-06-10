@@ -5,3 +5,11 @@ async function cautare() {
     window.location.href= `/produse.html?${param.toString()}`;
     // console.log(param)
 }
+document.addEventListener("DOMContentLoaded", function () {
+    let cautare = document.getElementById("baracautare").addEventListener('keypress', clickPress)
+});
+function clickPress(event) {
+    if (event.key == "Enter") {
+        cautare();
+    }
+}
