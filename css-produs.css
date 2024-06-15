@@ -118,7 +118,9 @@ a {
 
 .bara3 .search-container {
     float: left;
+    margin-right: 4.5em;
 }
+/* pentru bara de cautare in sine */
 
 .bara3 input[type=text] {
     padding-left: 5px;
@@ -139,6 +141,7 @@ a {
     border: none;
     cursor: pointer;
 }
+/* pentru lupa strict */
 
 @media screen and (max-width: 600px) {
     .bara3 .search-container {

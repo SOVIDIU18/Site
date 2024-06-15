@@ -40,15 +40,15 @@ function fcn2(){
             textdescriere.textContent = "Descriere"
             // let baraprodus = document.createElement("hr")
             // baraprodus.className = "bara-produs"
-            let buton = document.createElement("input")
-            buton.type = "button"
-            buton.value = "Adaugă în coș"
-            buton.className="buton"
+            // let buton = document.createElement("input")
+            // buton.type = "button"
+            // buton.value = "Adaugă în coș"
+            // buton.className="buton"
             // buton.onclick= 
-            let favoritprodus = document.createElement("input")
-            favoritprodus.type = "button"
-            favoritprodus.value = "Adaugă la favorite"
-            favoritprodus.className="favoriteprodus"
+            // let favoritprodus = document.createElement("input")
+            // favoritprodus.type = "button"
+            // favoritprodus.value = "Adaugă la favorite"
+            // favoritprodus.className="favoriteprodus"
             // buton.onclick=
 
             maindiv.appendChild(centrala)
@@ -57,8 +57,8 @@ function fcn2(){
            
             titludiv.appendChild(nume1);
             titludiv.appendChild(pret1);
-            titludiv.appendChild(buton)
-            titludiv.appendChild(favoritprodus)
+            // titludiv.appendChild(buton)
+            // titludiv.appendChild(favoritprodus)
             centrala.appendChild(textdescriere);
             centrala.appendChild(descriere);
 })
@@ -66,4 +66,36 @@ function fcn2(){
 
 document.addEventListener("DOMContentLoaded", function () {
     fcn2()
+    let params1 = new URLSearchParams(window.location.search)
+    const data1 = params.get("cautareprodus")
+    document.getElementById("baracautare").value = data1
+    console.log(data1)
+    fct1()
 });
+
+function clickPress(event) {
+    if (event.key == "Enter") {
+        schimba();
+    }
+}
+function schimba() {
+    let maindiv = document.getElementById("divm");
+    maindiv.innerHTML = ""
+    console.log("schimba")
+    fct1()
+}
+
+function cauta() {
+    fct1();
+}
+
+function checkCookieExistence(cookieName) {
+    let cookies = document.cookie.split('; ');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookiePair = cookies[i].split('=');
+        if (cookiePair[0] === cookieName) {
+            return true; // Cookie found
+        }
+    }
+    return false; // Cookie not found
+}
