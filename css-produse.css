@@ -160,6 +160,10 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+.bara3 ul {
+    display: flex;
+    align-items: center;
+}
 
 .bara3 ul li {
     display: inline-block;
@@ -173,12 +177,15 @@ a {
 
 .bara3 .search-container {
     float: left;
+    display: flex;
+    align-items: center;
 }
 
 .bara3 input[type=text] {
     padding-left: 5px;
     /* Ajustați acest lucru la dimensiunea dorită pentru a muta textul mai la stânga */
     margin-top: 8px;
+    /* margin-right: 6em; */
     font-size: 20px;
     width: 350px;
     /* Modificați această valoare la dimensiunea dorită pentru a face bara de căutare mai mare */
@@ -196,9 +203,9 @@ a {
 } */
 #lupa {
     font-size: 90%;
-    margin-left: -1.5%;
+    margin-right: 6em;
     width: 10%;
-    height: 29px;
+    height: 34px;
 }
 
 
