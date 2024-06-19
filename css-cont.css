@@ -10,7 +10,6 @@ a {
 .wrapper1 {
     background-color: white;
     position: -webkit-sticky;
-    /* Safari */
     top: 0%;
     z-index: 1;
 }
@@ -37,7 +36,6 @@ a {
 .wrapper {
     background-color: #f5f5f5;
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 0%;
     z-index: 1;
@@ -89,7 +87,6 @@ a {
 .wrapper3 {
     background-color: #f0f0f0;
     position: -webkit-sticky;
-    /* Safari */
     top: 8%;
     z-index: 1;
     position: sticky;
@@ -149,7 +146,3 @@ a {
     padding:10px 30px;
     background-color: white;
 }
-
-/* .popup{
-    height:20em !important;
-} */

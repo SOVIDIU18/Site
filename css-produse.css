@@ -65,7 +65,6 @@ a {
 .wrapper1 {
     background-color: rgb(255, 255, 255);
     /* position: -webkit-sticky; */
-    /* Safari */
     top: 0%;
     z-index: 2;
 }
@@ -92,7 +91,6 @@ a {
 .wrapper {
     background-color: #f5f5f5;
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 0%;
     z-index: 2;
@@ -144,7 +142,6 @@ a {
 .wrapper3 {
     background-color: #f0f0f0;
     position: -webkit-sticky;
-    /* Safari */
     top: 8%;
     z-index: 2;
     position: sticky;
@@ -177,11 +174,11 @@ a {
 
 .bara3 input[type=text] {
     padding-left: 5px;
-    /* Ajustați acest lucru la dimensiunea dorită pentru a muta textul mai la stânga */
+    /* pentru a muta textul mai la stânga */
     margin-top: 8px;
     font-size: 20px;
     width: 350px;
-    /* Modificați această valoare la dimensiunea dorită pentru a face bara de căutare mai mare */
+    /* pentru a face bara de căutare mai mare */
 }
 
 /* .bara3 .search-container button {
@@ -223,7 +220,7 @@ a {
         width: 44%;
         /* Ajustați lățimea la 100% pentru a ocupa întreaga lățime disponibilă */
         padding-left: 120px;
-        /* Ajustați padding-ul la stânga la dimensiunea dorită */
+        /*  padding-ul la stânga la dimensiunea dorită */
     }
 }
 
@@ -244,7 +241,7 @@ a {
     position: sticky;
     top: 14%;
 } */
-/* FARA BR IN  PLM */
+
 .filtrare-producator {
     width: 100%;
     margin-top: 4%;

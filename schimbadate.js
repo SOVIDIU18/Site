@@ -92,66 +92,62 @@ async function schimbaparola() {
 }
 
 
-async function schimbaemail() {
-    let id = getCookie("id_user");
-    let emailvechi = document.getElementById("emailold").value;
-    let emailnou = document.getElementById("emailnew").value;
-    let emailnouConfirm = document.getElementById("emailreintrod").value;
+// async function schimbaemail() {
+//     let id = getCookie("id_user");
+//     let emailvechi = document.getElementById("emailold").value;
+//     let emailnou = document.getElementById("emailnew").value;
+//     let parola = document.getElementById("emailreintrod").value;
 
-    // Verificare dacă adresa de email nouă și confirmarea adresei corespund
-    if (emailnou !== emailnouConfirm) {
-        const myPopup = new Popup({
-            id: "my-popup",
-            title: "Eroare",
-            content: `Adresa de email nouă și adresa reintrodusă nu corespund.`,
-            showImmediately: true
-        });
+//     // Verificare dacă adresa de email nouă și confirmarea adresei corespund
+//     // if (emailnou !== emailnouConfirm) {
+//     //     const myPopup = new Popup({
+//     //         id: "my-popup",
+//     //         title: "Eroare",
+//     //         content: `Adresa de email nouă și adresa reintrodusă nu corespund.`,
+//     //         showImmediately: true
+//     //     });
 
-        setTimeout(() => {
-            myPopup.hide();
-        }, 2000);
+//     //     setTimeout(() => {
+//     //         myPopup.hide();
+//     //     }, 2000);
 
-        return;
-    }
+//     //     return;
+//     // }
 
-    try {
-        console.log(getCookie("id_user"));
-        const record2 = await pb.collection('users').getOne(getCookie('id_user'));
-        console.log(record2["email"]);
+//     try {
+//         console.log(getCookie("id_user"));
+//         // Actualizare adresă de email
+//         const authData = await pb.collection('users').authWithPassword(emailvechi, parola);
+//         // const record = await pb.collection('users').update(id, data);
+//         console.log(pb.authStore.model.id)
+//         await pb.collection('users').requestEmailChange(`${emailnou}`);
+//         // Pop-up de succes
+//         const successPopup = new Popup({
+//             id: "success-popup",
+//             title: "Succes",
+//             content: `Adresa de email a fost schimbată cu succes.`,
+//             showImmediately: true
+//         });
 
-        const data = {
-            email: emailnou
-        };
+//         setTimeout(() => {
+//             successPopup.hide();
+//         }, 2000);
 
-        // Actualizare adresă de email
-        const record = await pb.collection('users').update(id, data);
+//     } catch (error) {
+//         console.error('Eroare la schimbarea adresei de email:', error);
+//         const errorPopup = new Popup({
+//             id: "error-popup",
+//             title: "Eroare",
+//             content: `A apărut o eroare la schimbarea adresei de email. Vă rugăm să încercați din nou.`,
+//             showImmediately: true
+//         });
 
-        // Pop-up de succes
-        const successPopup = new Popup({
-            id: "success-popup",
-            title: "Succes",
-            content: `Adresa de email a fost schimbată cu succes.`,
-            showImmediately: true
-        });
-
-        setTimeout(() => {
-            successPopup.hide();
-        }, 2000);
-
-    } catch (error) {
-        console.error('Eroare la schimbarea adresei de email:', error);
-        const errorPopup = new Popup({
-            id: "error-popup",
-            title: "Eroare",
-            content: `A apărut o eroare la schimbarea adresei de email. Vă rugăm să încercați din nou.`,
-            showImmediately: true
-        });
-
-        setTimeout(() => {
-            errorPopup.hide();
-        }, 2000);
-    }
-}
+//         setTimeout(() => {
+//             errorPopup.hide();
+//         }, 2000);
+//         console.log(error.response.data)
+//     }
+// }
 async function stergerecont() {
     try {
         const userId = getCookie("id_user");

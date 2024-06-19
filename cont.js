@@ -28,8 +28,6 @@ if(logat === true){
 }
     })
     pb.authStore.clear();
-    // const authData = await pb.collection('users').authWithOAuth2({ provider: 'google' });
-
 }
 function getCookie(name) {
     let cookies = document.cookie.split('; ');

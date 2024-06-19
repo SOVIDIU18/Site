@@ -209,11 +209,11 @@ a {
 
 .bara3 input[type=text] {
     padding-left: 5px;
-    /* Ajustați acest lucru la dimensiunea dorită pentru a muta textul mai la stânga */
+    /* pentru a muta textul mai la stânga */
     margin-top: 8px;
     font-size: 20px;
     width: 350px;
-    /* Modificați această valoare la dimensiunea dorită pentru a face bara de căutare mai mare */
+    /* pentru a face bara de căutare mai mare */
 }
 
 .bara3 .search-container button {
