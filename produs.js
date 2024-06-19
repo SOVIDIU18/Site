@@ -12,10 +12,12 @@ function fcn2(){
         let maindiv = document.getElementById("maindiv");
         let pozadiv = document.getElementById("poza");
         let titludiv = document.getElementById("titlu");
+        let carte_tehnica = document.createElement("a");
         let data = response.data["items"][0]
             let nume = data["nume"]
             let pret = data["pret"]
             let stoc = data["stoc"]
+            let manual = data["carte_tehnica"]
             console.log(`${nume} ${pret} ${stoc}`)
             console.log(`${nume} ${pret} ${stoc}`)
             let centrala = document.createElement("div")
@@ -29,6 +31,8 @@ function fcn2(){
             let poza = document.createElement("img");
             poza.className = "imagine"
             poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
+            carte_tehnica.href = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["carte_tehnica"][0]}`
+            carte_tehnica.innerHTML = "Carte tehnica"
             nume1.textContent += nume;
             pret1.textContent += pret + " RON " ;
             stoc1.checked = (stoc == "true");
@@ -38,18 +42,6 @@ function fcn2(){
             let textdescriere = document.createElement("p")
             textdescriere.className = "textdescriere"
             textdescriere.textContent = "Descriere"
-            // let baraprodus = document.createElement("hr")
-            // baraprodus.className = "bara-produs"
-            // let buton = document.createElement("input")
-            // buton.type = "button"
-            // buton.value = "Adaugă în coș"
-            // buton.className="buton"
-            // buton.onclick= 
-            // let favoritprodus = document.createElement("input")
-            // favoritprodus.type = "button"
-            // favoritprodus.value = "Adaugă la favorite"
-            // favoritprodus.className="favoriteprodus"
-            // buton.onclick=
 
             maindiv.appendChild(centrala)
             pozadiv.appendChild(poza);
@@ -61,16 +53,13 @@ function fcn2(){
             // titludiv.appendChild(favoritprodus)
             centrala.appendChild(textdescriere);
             centrala.appendChild(descriere);
+            centrala.appendChild(carte_tehnica);
+        
 })
 }
 
 document.addEventListener("DOMContentLoaded", function () {
     fcn2()
-    let params1 = new URLSearchParams(window.location.search)
-    const data1 = params.get("cautareprodus")
-    document.getElementById("baracautare").value = data1
-    console.log(data1)
-    fct1()
 });
 
 function clickPress(event) {

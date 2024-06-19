@@ -6,13 +6,6 @@ async function inregistrare() {
     if (password.value !== passwordconfirmed.value) {
         const myPopup = new Popup({
             id: "my-popup",
-        //     css: `
-         
-        //     .clasa {
-        //         font-size:333333px;
-        //     }
-           
-        // `,
             title: "Eroare",
             content: `
             {clasa}[Parolele nu corespund.]
@@ -27,12 +20,6 @@ async function inregistrare() {
     if (password.value.length < 8) {
         const myPopup = new Popup({
             id: "my-popup",
-            // css: `
-         
-            //     .popup {
-            //         backgroundColor: red;
-            //     }
-            // `,
             title: "Eroare",
             content: `Parola trebuie să conțină minim 8 caractere.`,
             showImmediately: true
@@ -47,12 +34,6 @@ async function inregistrare() {
 if(email.value <= 0){
     const myPopup = new Popup({
         id: "my-popup",
-        // css: `
-     
-        //     .popup {
-        //         backgroundColor: red;
-        //     }
-        // `,
         title: "Eroare",
         content: `Emailul nu poate fi gol.`,
         showImmediately: true

@@ -499,7 +499,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxACM91_100 = document.getElementById("checkboxACM91_100").addEventListener('change', schimba)
     let checkboxACM100 = document.getElementById("checkboxACM100").addEventListener('change', schimba)
     let params = new URLSearchParams(window.location.search)
-    const data = params.get("cautarehome")
+    const data = params.get("cautare")
     document.getElementById("baracautare").value = data
     console.log(data)
     fct1()
