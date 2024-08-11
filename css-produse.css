@@ -65,8 +65,9 @@ a {
 .wrapper1 {
     background-color: rgb(255, 255, 255);
     /* position: -webkit-sticky; */
-    top: 0%;
+    top: 0;
     z-index: 2;
+    position: sticky;
 }
 
 .bara1 {
@@ -93,7 +94,7 @@ a {
     position: -webkit-sticky;
     position: sticky;
     top: 0%;
-    z-index: 2;
+    z-index: 100;
 }
 
 .bara2 {

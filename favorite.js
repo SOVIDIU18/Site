@@ -41,7 +41,7 @@ function loadfavorite() {
             favorite.className = "favorite";
             favorite.onclick = () => {
                 favorite.classList.toggle('red'); // Adaugă sau elimină clasa .red la click
-                adaugalafavorite(data["id"]);
+                delete_cookie(data["id"]);
             };
 
             let linkpoza = document.createElement("a")
@@ -62,3 +62,16 @@ function loadfavorite() {
 document.addEventListener("DOMContentLoaded", function () {
     loadfavorite();
 })
+
+function get_cookie(name){
+    return document.cookie.split(';').some(c => {
+        return c.trim().startsWith(name + '=');
+    });
+}
+
+function delete_cookie( name ) {
+    if( get_cookie( name ) ) {
+      document.cookie = name + "="  +
+        ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+    }
+  }

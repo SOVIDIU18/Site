@@ -32,7 +32,7 @@ function fcn2(){
             poza.className = "imagine"
             poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
             carte_tehnica.href = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["carte_tehnica"][0]}`
-            carte_tehnica.innerHTML = "Carte tehnica"
+            carte_tehnica.innerHTML = "Carte tehnică"
             nume1.textContent += nume;
             pret1.textContent += pret + " RON " ;
             stoc1.checked = (stoc == "true");
