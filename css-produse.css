@@ -202,8 +202,9 @@ a {
 #lupa {
     font-size: 90%;
     margin-right: 6em;
+    margin-top: 0.35em;
     width: 10%;
-    height: 34px;
+    height: 30px;
 }
 
 
