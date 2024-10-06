@@ -6,7 +6,7 @@ function loadfavorite() {
     }
     filtre = filtre.slice(0, -2)
     filtre += ")"
-    axios.get(`http://127.0.0.1:8090/api/collections/centrale/records`, {
+    axios.get(`https://baza-de-date.pockethost.io/api/collections/centrale/records`, {
         params: {
             filter: filtre,
             perPage: 100
@@ -21,20 +21,20 @@ function loadfavorite() {
             let stoc = data["stoc"]
             let centrala = document.createElement("div")
             centrala.className = "element"
-            
+
             let nume1 = document.createElement("a");
             nume1.className = "text"
             nume1.href = "/produs.html?id=" + data["id"]
             nume1.textContent += nume;
-            
+
             let pret1 = document.createElement("p");
             pret1.className = "pret"
             pret1.textContent += pret + " RON ";
-            
+
             let poza = document.createElement("img");
             poza.className = "imagine"
-            poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
-            
+            poza.src = `https://baza-de-date.pockethost.io/api/files/centrale/${data["id"]}/${data["imagine"]}`
+
             let favorite = document.createElement("input");
             favorite.type = "button";
             favorite.value = "\uf004";
@@ -63,15 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
     loadfavorite();
 })
 
-function get_cookie(name){
+function get_cookie(name) {
     return document.cookie.split(';').some(c => {
         return c.trim().startsWith(name + '=');
     });
 }
 
-function delete_cookie( name ) {
-    if( get_cookie( name ) ) {
-      document.cookie = name + "="  +
-        ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+function delete_cookie(name) {
+    if (get_cookie(name)) {
+        document.cookie = name + "=" +
+            ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
     }
-  }
+}

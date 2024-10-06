@@ -1,6 +1,6 @@
 // import PocketBase from 'pocketbase';
 
-const pb = new PocketBase('http://127.0.0.1:8090');
+const pb = new PocketBase('https://baza-de-date.pockethost.io/');
 let folosestecautare = false;
 function schimbacautare(nume){
     let cautare = document.getElementById("baracautare").value; 
@@ -402,7 +402,7 @@ async function fct1() {
     filtre += ")"
 
     console.log(filtre)
-    let cerere = axios.get(`http://127.0.0.1:8090/api/collections/centrale/records`, {
+    let cerere = axios.get(`https://baza-de-date.pockethost.io/api/collections/centrale/records`, {
         params: {
             filter: filtre,
             perPage: 100,
@@ -430,7 +430,7 @@ async function fct1() {
             stoc1.type = "checkbox";
             let poza = document.createElement("img");
             poza.className = "imagine"
-            poza.src = `http://127.0.0.1:8090/api/files/centrale/${data["id"]}/${data["imagine"]}`
+            poza.src = `https://baza-de-date.pockethost.io/api/files/centrale/${data["id"]}/${data["imagine"]}`
             nume1.textContent += nume;
             pret1.textContent += pret + " RON ";
             stoc1.checked = (stoc == "true");

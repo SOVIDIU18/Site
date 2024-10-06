@@ -3,9 +3,9 @@ function getLeadingNumbers(str) {
     return result ? result[0] : null;
 }
 function update() {
-    let cerere = axios.get(`http://127.0.0.1:8090/api/collections/centrale/records`, {
+    let cerere = axios.get(`https://baza-de-date.pockethost.io/api/collections/centrale/records`, {
         params: {
-            perPage: 100 
+            perPage: 100
         }
     }).then(function (response) {
         let i = 0
@@ -16,11 +16,11 @@ function update() {
             const param = {
                 "putere_ACM_nr": Number(numar)
             }
-            let cerere = axios.patch(`http://127.0.0.1:8090/api/collections/centrale/records/${data["id"]}`    
-            ,param).then(function (response2) {
-                console.log(response2.status)
-                // console.log(`am updatat ${data["nume"]}`)
-        })
+            let cerere = axios.patch(`https://baza-de-date.pockethost.io/api/collections/centrale/records/${data["id"]}`
+                , param).then(function (response2) {
+                    console.log(response2.status)
+                    // console.log(`am updatat ${data["nume"]}`)
+                })
         }
         console.log(i)
     })
