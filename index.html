@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css-produse.css">
     <script defer src="index.js"></script>
     <script defer src="cautareindex.js"></script>
+    <script defer src="swiper.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <title>Home</title>
 </head>
@@ -55,8 +59,8 @@
                                 value="&#xf002;">
                         </li>
                         <!-- <li><a href="cos.html"><i class="fa fa-shopping-cart" style="font-size:30px"></i> Coș</a></li> -->
-                        <li><a href="contul meu.html"><i class="fa fa-user" style="font-size:30px"></i> Contul Meu</a>
-                        </li>
+                        <!-- <li><a href="contul meu.html"><i class="fa fa-user" style="font-size:30px"></i> Contul Meu</a>
+                        </li> -->
                         <li><a href="favorite.html"><i class="fa fa-heart" style="font-size:30px"></i> Favorite</a></li>
                     </ul>
                     <!-- <li class="search-container">
@@ -84,7 +88,8 @@
             } -->
         </style>
         <!-- <div class="slideshow-container"> -->
-        <div class="mySlides">
+
+        <!-- <div class="mySlides">
             <img src="imagini/bdrso.jpg">
         </div>
         <div class="mySlides">
@@ -98,9 +103,33 @@
         </div>
         <div class="mySlides">
             <img src="imagini/bdrs.jpg">
-        </div>
+        </div> -->
+
         <!-- <button onclick ="fct1()">Arata</button> -->
         <!-- </div> -->
+         <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="imagini/bdrso.jpg"></div>
+            <div class="swiper-slide"><img src="imagini/bax.jpg"></div>
+            <div class="swiper-slide"><img src="imagini/beretta.jpg"></div>
+            <div class="swiper-slide"><img src="imagini/DD.jpg"></div>
+            <div class="swiper-slide"><img src="imagini/bdrs.jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+  
+
 </body>
 
 </html>

@@ -252,6 +252,23 @@ a {
     }
 }
 
+.swiper {
+    width: 85%;
+    height: fit-content;
+} 
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color:#11559e;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: #11559e;
+}
+
 #range-pret {
     background: linear-gradient(to right, white 100%);
     background: linear-gradient(to left, white 100%);
