@@ -269,6 +269,48 @@ a {
     background: #11559e;
 }
 
+.container-index {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 85%;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+.section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+
+  .section:last-child {
+    border-right: none;
+  }
+
+  .icon {
+    font-size: 38px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #11559e;
+  }
+
+  .description {
+    font-size: 14px;
+    color: #666;
+  }
+
 #range-pret {
     background: linear-gradient(to right, white 100%);
     background: linear-gradient(to left, white 100%);
