@@ -311,6 +311,18 @@ a {
     color: #666;
   }
 
+.recomandari{
+display: flex;
+flex-direction: row;
+overflow-x: auto;
+
+}
+
+.recomandari>div{
+flex:0 0 auto;
+border:1px solid red;
+}
+
 #range-pret {
     background: linear-gradient(to right, white 100%);
     background: linear-gradient(to left, white 100%);
