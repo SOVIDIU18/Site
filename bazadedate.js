@@ -94,7 +94,7 @@ async function fct1() {
     }
     // filtre += ")"
     let putere_incalzire_nr = ""
-    // let checkboxîncălzire10 = document.getElementById("checkboxîncălzire10")
+    let checkboxîncălzire10 = document.getElementById("checkboxîncălzire10")
     let checkboxîncălzire21 = document.getElementById("checkboxîncălzire21")
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30")
     let checkboxîncălzire31_40 = document.getElementById("checkboxîncălzire31_40")
@@ -106,10 +106,10 @@ async function fct1() {
     let checkboxîncălzire91_100 = document.getElementById("checkboxîncălzire91_100")
     let checkboxîncălzire100 = document.getElementById("checkboxîncălzire100")
 
-    if (checkboxîncălzire10.checked) {
-        putere_incalzire_nr += "&&("
-        putere_incalzire_nr += `putere_incalzire_nr <= 10`
-    }
+    // if (checkboxîncălzire10.checked) {
+    //     putere_incalzire_nr += "&&("
+    //     putere_incalzire_nr += `putere_incalzire_nr <= 10`
+    // }
     if (checkboxîncălzire21.checked) {
         if (putere_incalzire_nr.length <= 0) {
             putere_incalzire_nr += "&& ( "
