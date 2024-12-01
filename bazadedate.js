@@ -481,7 +481,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30").addEventListener('change', schimba)
     let checkboxîncălzire31_40 = document.getElementById("checkboxîncălzire31_40").addEventListener('change', schimba)
     let checkboxîncălzire41_50 = document.getElementById("checkboxîncălzire41_50").addEventListener('change', schimba)
-    let checkboxîncălzire51_70 = document.getElementById("checkboxîncălzire51_60").addEventListener('change', schimba)
+    let checkboxîncălzire51_70 = document.getElementById("checkboxîncălzire51_70").addEventListener('change', schimba)
     // let checkboxîncălzire61_70 = document.getElementById("checkboxîncălzire61_70").addEventListener('change', schimba)
     let checkboxîncălzire71_100 = document.getElementById("checkboxîncălzire71_100").addEventListener('change', schimba)
     // let checkboxîncălzire81_90 = document.getElementById("checkboxîncălzire81_90").addEventListener('change', schimba)
