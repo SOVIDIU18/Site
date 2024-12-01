@@ -95,7 +95,7 @@ async function fct1() {
     // filtre += ")"
     let putere_incalzire_nr = ""
     let checkboxîncălzire10 = document.getElementById("checkboxîncălzire10")
-    let checkboxîncălzire21 = document.getElementById("checkboxîncălzire21")
+    let checkboxîncălzire20 = document.getElementById("checkboxîncălzire20")
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30")
     let checkboxîncălzire31_40 = document.getElementById("checkboxîncălzire31_40")
     let checkboxîncălzire41_50 = document.getElementById("checkboxîncălzire41_50")
@@ -110,7 +110,7 @@ async function fct1() {
     //     putere_incalzire_nr += "&&("
     //     putere_incalzire_nr += `putere_incalzire_nr <= 10`
     // }
-    if (checkboxîncălzire21.checked) {
+    if (checkboxîncălzire20.checked) {
         if (putere_incalzire_nr.length <= 0) {
             putere_incalzire_nr += "&& ( "
         }
@@ -118,7 +118,7 @@ async function fct1() {
             putere_incalzire_nr += "||"
         }
 
-        putere_incalzire_nr += 'putere_incalzire_nr<=21'
+        putere_incalzire_nr += 'putere_incalzire_nr<=20'
     }
     if (checkboxîncălzire21_30.checked) {
         if (putere_incalzire_nr.length <= 0) {
@@ -477,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxgaz = document.getElementById("checkboxgaz").addEventListener('change', schimba)
     let checkboxcurentelectric = document.getElementById("checkboxcurentelectric").addEventListener('change', schimba)
     // let checkboxîncălzire10 = document.getElementById("checkboxîncălzire10").addEventListener('change', schimba)
-    let checkboxîncălzire21 = document.getElementById("checkboxîncălzire21").addEventListener('change', schimba)
+    let checkboxîncălzire20 = document.getElementById("checkboxîncălzire20").addEventListener('change', schimba)
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30").addEventListener('change', schimba)
     let checkboxîncălzire31_40 = document.getElementById("checkboxîncălzire31_40").addEventListener('change', schimba)
     let checkboxîncălzire41_50 = document.getElementById("checkboxîncălzire41_50").addEventListener('change', schimba)
