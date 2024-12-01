@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxACM41_50 = document.getElementById("checkboxACM41_50").addEventListener('change', schimba)
     let checkboxACM51_70 = document.getElementById("checkboxACM51_70").addEventListener('change', schimba)
     // let checkboxACM61_70 = document.getElementById("checkboxACM61_70").addEventListener('change', schimba)
-    // let checkboxACM71_80 = document.getElementById("checkboxACM71_80").addEventListener('change', schimba)
+    let checkboxACM71_100 = document.getElementById("checkboxACM71_100").addEventListener('change', schimba)
     // let checkboxACM81_90 = document.getElementById("checkboxACM81_90").addEventListener('change', schimba)
     // let checkboxACM91_100 = document.getElementById("checkboxACM91_100").addEventListener('change', schimba)
     let checkboxACM100 = document.getElementById("checkboxACM100").addEventListener('change', schimba)
