@@ -99,9 +99,9 @@ async function fct1() {
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30")
     let checkboxîncălzire31_40 = document.getElementById("checkboxîncălzire31_40")
     let checkboxîncălzire41_50 = document.getElementById("checkboxîncălzire41_50")
-    let checkboxîncălzire51_60 = document.getElementById("checkboxîncălzire51_60")
+    let checkboxîncălzire51_70 = document.getElementById("checkboxîncălzire51_70")
     let checkboxîncălzire61_70 = document.getElementById("checkboxîncălzire61_70")
-    let checkboxîncălzire71_80 = document.getElementById("checkboxîncălzire71_80")
+    let checkboxîncălzire71_100 = document.getElementById("checkboxîncălzire71_80")
     let checkboxîncălzire81_90 = document.getElementById("checkboxîncălzire81_90")
     let checkboxîncălzire91_100 = document.getElementById("checkboxîncălzire91_100")
     let checkboxîncălzire100 = document.getElementById("checkboxîncălzire100")
@@ -156,7 +156,7 @@ async function fct1() {
         putere_incalzire_nr += 'putere_incalzire_nr >= 41 && putere_incalzire_nr<=50'
 
     }
-    if (checkboxîncălzire51_60.checked) {
+    if (checkboxîncălzire51_70.checked) {
         if (putere_incalzire_nr.length <= 0) {
             putere_incalzire_nr += "&& ( "
 
@@ -165,22 +165,10 @@ async function fct1() {
             putere_incalzire_nr += "||"
         }
 
-        putere_incalzire_nr += 'putere_incalzire_nr >= 51 && putere_incalzire_nr<=60'
+        putere_incalzire_nr += 'putere_incalzire_nr >= 51 && putere_incalzire_nr<=70'
 
     }
-    if (checkboxîncălzire61_70.checked) {
-        if (putere_incalzire_nr.length <= 0) {
-            putere_incalzire_nr += "&& ( "
-
-        }
-        else {
-            putere_incalzire_nr += "||"
-        }
-
-        putere_incalzire_nr += 'putere_incalzire_nr >= 61 && putere_incalzire_nr<=70'
-
-    }
-    // if (checkboxîncălzire71_80.checked) {
+    // if (checkboxîncălzire61_70.checked) {
     //     if (putere_incalzire_nr.length <= 0) {
     //         putere_incalzire_nr += "&& ( "
 
@@ -189,10 +177,10 @@ async function fct1() {
     //         putere_incalzire_nr += "||"
     //     }
 
-    //     putere_incalzire_nr += 'putere_incalzire_nr >= 71 && putere_incalzire_nr<=80'
+    //     putere_incalzire_nr += 'putere_incalzire_nr >= 61 && putere_incalzire_nr<=70'
 
     // }
-    if (checkboxîncălzire81_90.checked) {
+    if (checkboxîncălzire71_100.checked) {
         if (putere_incalzire_nr.length <= 0) {
             putere_incalzire_nr += "&& ( "
 
@@ -201,21 +189,33 @@ async function fct1() {
             putere_incalzire_nr += "||"
         }
 
-        putere_incalzire_nr += 'putere_incalzire_nr >= 81 && putere_incalzire_nr<=90'
+        putere_incalzire_nr += 'putere_incalzire_nr >= 71 && putere_incalzire_nr<=100'
 
     }
-    if (checkboxîncălzire91_100.checked) {
-        if (putere_incalzire_nr.length <= 0) {
-            putere_incalzire_nr += "&& ( "
+    // if (checkboxîncălzire81_90.checked) {
+    //     if (putere_incalzire_nr.length <= 0) {
+    //         putere_incalzire_nr += "&& ( "
 
-        }
-        else {
-            putere_incalzire_nr += "||"
-        }
+    //     }
+    //     else {
+    //         putere_incalzire_nr += "||"
+    //     }
 
-        putere_incalzire_nr += 'putere_incalzire_nr >= 91 && putere_incalzire_nr<=100'
+    //     putere_incalzire_nr += 'putere_incalzire_nr >= 81 && putere_incalzire_nr<=90'
 
-    }
+    // }
+    // if (checkboxîncălzire91_100.checked) {
+    //     if (putere_incalzire_nr.length <= 0) {
+    //         putere_incalzire_nr += "&& ( "
+
+    //     }
+    //     else {
+    //         putere_incalzire_nr += "||"
+    //     }
+
+    //     putere_incalzire_nr += 'putere_incalzire_nr >= 91 && putere_incalzire_nr<=100'
+
+    // }
     if (checkboxîncălzire100.checked) {
         if (putere_incalzire_nr.length <= 0) {
             putere_incalzire_nr += "&& ( "
@@ -346,18 +346,18 @@ async function fct1() {
         putere_ACM_nr += 'putere_ACM_nr >= 81 && putere_ACM_nr<=90'
 
     }
-    if (checkboxîncălzire91_100.checked) {
-        if (putere_ACM_nr.length <= 0) {
-            putere_ACM_nr += "&& ( "
+    // if (checkboxîncălzire91_100.checked) {
+    //     if (putere_ACM_nr.length <= 0) {
+    //         putere_ACM_nr += "&& ( "
 
-        }
-        else {
-            putere_ACM_nr += "||"
-        }
+    //     }
+    //     else {
+    //         putere_ACM_nr += "||"
+    //     }
 
-        putere_ACM_nr += 'putere_ACM_nr >= 91 && putere_ACM_nr<=100'
+    //     putere_ACM_nr += 'putere_ACM_nr >= 91 && putere_ACM_nr<=100'
 
-    }
+    // }
     if (checkboxACM100.checked) {
         if (putere_ACM_nr.length <= 0) {
             putere_ACM_nr += "&& ( "
@@ -481,11 +481,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30").addEventListener('change', schimba)
     let checkboxîncălzire31_40 = document.getElementById("checkboxîncălzire31_40").addEventListener('change', schimba)
     let checkboxîncălzire41_50 = document.getElementById("checkboxîncălzire41_50").addEventListener('change', schimba)
-    let checkboxîncălzire51_60 = document.getElementById("checkboxîncălzire51_60").addEventListener('change', schimba)
-    let checkboxîncălzire61_70 = document.getElementById("checkboxîncălzire61_70").addEventListener('change', schimba)
-    // let checkboxîncălzire71_80 = document.getElementById("checkboxîncălzire71_80").addEventListener('change', schimba)
-    let checkboxîncălzire81_90 = document.getElementById("checkboxîncălzire81_90").addEventListener('change', schimba)
-    let checkboxîncălzire91_100 = document.getElementById("checkboxîncălzire91_100").addEventListener('change', schimba)
+    let checkboxîncălzire51_70 = document.getElementById("checkboxîncălzire51_60").addEventListener('change', schimba)
+    // let checkboxîncălzire61_70 = document.getElementById("checkboxîncălzire61_70").addEventListener('change', schimba)
+    let checkboxîncălzire71_100 = document.getElementById("checkboxîncălzire71_80").addEventListener('change', schimba)
+    // let checkboxîncălzire81_90 = document.getElementById("checkboxîncălzire81_90").addEventListener('change', schimba)
+    // let checkboxîncălzire91_100 = document.getElementById("checkboxîncălzire91_100").addEventListener('change', schimba)
     let checkboxîncălzire100 = document.getElementById("checkboxîncălzire100").addEventListener('change', schimba)
     let checkboxACM10 = document.getElementById("checkboxACM10").addEventListener('change', schimba)
     let checkboxACM11_20 = document.getElementById("checkboxACM11_20").addEventListener('change', schimba)
