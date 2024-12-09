@@ -303,6 +303,19 @@ a {
     padding-left: 5%;
 }
 
+.filtrare-preparareACM {
+    width: 100%;
+    margin-top: 4%;
+    background-color: #f0f0f0;
+    height: 110px;
+    /* position: -webkit-sticky; */
+    /* Safari */
+    /* position: sticky; */
+    top: 14%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
 .range_container {
     display: flex;
     flex-direction: column;
@@ -311,7 +324,7 @@ a {
     background-color: #f0f0f0;
     padding-top: 5%;
     padding-left: 5%;
-    height: 11em; 
+    height: 12em; 
     /* em foloseste marimea fontului din container, iar rem pe cea din html si % ia din marimea parintelui*/
     /* <br/> e la fel ca un br normal */
 

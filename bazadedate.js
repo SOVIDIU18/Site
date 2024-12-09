@@ -399,9 +399,34 @@ async function fct1() {
         tip_combustibil += ")"
         filtre += tip_combustibil
     }
+
+    let tip_preparare = ""
+    let checkboxinstantanee = document.getElementById("checkboxinstantanee")
+    let checkboxsistem = document.getElementById("checkboxsistem")
+    if (checkboxinstantanee.checked) {
+        tip_preparare += "&& ( "
+        tip_preparare += `tip_preparare ~ "preparare instantanee"`
+    }
+    if (checkboxsistem.checked) {
+        if (tip_preparare.length <= 0) {
+            tip_preparare += "&& ( "
+
+        }
+        else {
+            tip_preparare += "||"
+        }
+
+        tip_preparare += `tip_preparare ~ "sistem"`
+
+    }
+    if (tip_preparare.length > 0) {
+        tip_preparare += ")"
+        filtre += tip_preparare
+    }
+    
     filtre += ")"
 
-    console.log(filtre)
+    // console.log(filtre)
     let cerere = axios.get(`https://baza-de-date.pockethost.io/api/collections/centrale/records`, {
         params: {
             filter: filtre,
@@ -476,6 +501,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxdedietrich = document.getElementById("checkboxdedietrich").addEventListener('change', schimba)
     let checkboxgaz = document.getElementById("checkboxgaz").addEventListener('change', schimba)
     let checkboxcurentelectric = document.getElementById("checkboxcurentelectric").addEventListener('change', schimba)
+    let checkboxinstantanee = document.getElementById("checkboxinstantanee").addEventListener('change', schimba)
+    let checkboxsistem = document.getElementById("checkboxsistem").addEventListener('change', schimba)
     // let checkboxîncălzire10 = document.getElementById("checkboxîncălzire10").addEventListener('change', schimba)
     let checkboxîncălzire20 = document.getElementById("checkboxîncălzire20").addEventListener('change', schimba)
     let checkboxîncălzire21_30 = document.getElementById("checkboxîncălzire21_30").addEventListener('change', schimba)

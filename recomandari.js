@@ -26,9 +26,9 @@ async function adaugafavorite(id,num){
 
 }
 document.addEventListener("DOMContentLoaded", function() {
-    adaugafavorite("1o0btjmnzezxjdt",1);
-    adaugafavorite("4md7cj5o8tt9rrg",2);
-    adaugafavorite("deqra64qk391rah",3);
-    adaugafavorite("6ukg687n64mfsr0",4);
-    adaugafavorite("3rfs5c6xr65wlkk",5);
+    adaugafavorite("yzfjx9kcdcmo3z9",1);
+    adaugafavorite("jt6c56psa03e8te",2);
+    adaugafavorite("i97bfizyd6hwwz6",3);
+    adaugafavorite("m26zhwk7y1i5gks",4);
+    adaugafavorite("ef9b5ahmoyu7gh4",5);
   });
