@@ -656,6 +656,114 @@ li img {
     object-fit: contain;
 }
 
+.Punct-termic-cu-cazan-DeDietrich-Naneo-S34 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cazan-DeDietrich-Naneo-S34 {
+    font-size: 150%;
+    /* margin-left: 25%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
+.Punct-termic-cu-cascada-2xcazan-Buderus-GB162-100-kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Punct-termic-cu-cascada-2xcazan-Buderus-GB162-100-kW {
+    font-size: 150%;
+    /* margin-left: 13%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
+.Instalație-cu-pompă-de-caldură-NIBE-F2120-20-cazan-DeDietrich-Naneo-S34 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Instalație-cu-pompă-de-caldură-NIBE-F2120-20-cazan-DeDietrich-Naneo-S34 {
+    font-size: 150%;
+    /* margin-left: 13%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
+.Instalație-cu-pompă-de-caldură-NIBE-F2120-20-cazan-Buderus-GB172-24 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Instalație-cu-pompă-de-caldură-NIBE-F2120-20-cazan-Buderus-GB172-24 {
+    font-size: 150%;
+    /* margin-left: 13%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
+.Instalatie-cu-2xcazan-pe-pelleti-OPOP-Biopel-80-kW {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Instalatie-cu-2xcazan-pe-pelleti-OPOP-Biopel-80-kW {
+    font-size: 150%;
+    /* margin-left: 13%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
+.Înlocuire-boiler-ACM-3000-l {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-Înlocuire-boiler-ACM-3000-l {
+    font-size: 150%;
+    /* margin-left: 35%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
 .Instalatie-cu-cazan-in-condensare-GB112-60kW {
     display: flex;
     flex-direction: row;
@@ -685,8 +793,9 @@ li img {
 
 .text-Instalatie-cu-cazan-in-condensare-GB112-43kW {
     font-size: 150%;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -719,8 +828,9 @@ li img {
 
 .text-Punct-termic-cu-cazan-SK755-500kW {
     font-size: 150%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -736,8 +846,9 @@ li img {
 
 .text-Punct-termic-cu-cascada-de-3-cazane-GB162-80kW {
     font-size: 150%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -753,8 +864,9 @@ li img {
 
 .text-Punct-termic-cu-cascada-de-3-cazane-GB162-100kW {
     font-size: 150%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -770,8 +882,9 @@ li img {
 
 .text-Punct-termic-cu-cascada-de-2-cazane-GB162-80kW {
     font-size: 150%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -805,8 +918,9 @@ li img {
 
 .text-Punct-termic-cu-cazan-de-fonta-GE-120kW-niplat {
     font-size: 150%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -822,8 +936,9 @@ li img {
 
 .text-Punct-termic-cu-cascada-de-2-cazane-de-otel {
     font-size: 150%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -875,8 +990,9 @@ li img {
 
 .text-Punct-termic-cu-cazan-pe-peleti-SP261-25kW {
     font-size: 150%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
 
@@ -927,8 +1043,9 @@ li img {
 
 .text-Controlul-cazanului-realizat-prin-internet {
     font-size: 150%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     /* Adjust the left margin for the text container */
+    text-align: center;
     margin-top: 7%;
 }
