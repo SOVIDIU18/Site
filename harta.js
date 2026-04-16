@@ -1,7 +1,7 @@
 function recentreazaHarta() {
     // Coordonatele pentru recentrare
-    var lat = 45.73926696519606;
-    var lon = 21.219534873962402;
+    var lat = 45.73934478271652;
+    var lon = 21.218788999507243;
 
     // Generarea URL-ului cu noile coordonate
     var newSrc = "https://www.openstreetmap.org/export/embed.html?bbox=" +
