@@ -264,6 +264,12 @@ a {
     }
 }
 
+.video {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .swiper {
     width: 85%;
     height: fit-content;
