@@ -443,6 +443,9 @@ async function fct1() {
             let nume = data["nume"]
             let pret = data["pret"]
             let stoc = data["stoc"]
+            if (stoc == "false" || stoc == false) {
+                continue; // Sare peste crearea elementelor dacă stocul e fals
+            }
             // console.log(`${nume} ${pret} ${stoc}`)
             let centrala = document.createElement("div")
             centrala.className = "element"

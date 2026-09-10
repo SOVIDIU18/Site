@@ -34,7 +34,16 @@ function fcn2() {
         carte_tehnica.href = `https://baza-de-date.pockethost.io/api/files/centrale/${data["id"]}/${data["carte_tehnica"][0]}`
         carte_tehnica.innerHTML = "Carte tehnică"
         nume1.textContent += nume;
-        pret1.textContent += pret + " RON ";
+        let textSuplimentar = "";
+
+        // Completează aici cu ID-urile produselor care NU includ kitul
+        const idUriExcluse = ["8ywd1sqjlygqs7g", "1tss99zklojq7fp", "ttd3f3mqyyttl3u", "12z1t88o9bw83nr", "yqnn69lyp9d9g79", "yefjhp4b3vvxgy9", "ut0atr0p5ezbhcm"]; 
+
+        if (!idUriExcluse.includes(data["id"])) {
+            textSuplimentar = " (Kit gaze arse inclus)"; 
+        }
+
+        pret1.textContent += pret + " RON" + textSuplimentar;
         stoc1.checked = (stoc == "true");
         let descriere = document.createElement("p");
         descriere.textContent = data["descriere"]
