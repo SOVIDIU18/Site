@@ -689,6 +689,24 @@ li img {
     margin-right: 15%;
 }
 
+.text-Instalație-cu-pompă-de-caldură-Bosch-Compress-7001-17 {
+    font-size: 150%;
+    /* margin-left: 25%; */
+    /* Adjust the left margin for the text container */
+    text-align: center;
+    margin-top: 7%;
+}
+
+.Instalație-cu-pompă-de-caldură-Bosch-Compress-7001-17 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .text-Punct-termic-cu-cazan-DeDietrich-Naneo-S34 {
     font-size: 150%;
     /* margin-left: 25%; */
